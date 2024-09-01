@@ -19,8 +19,8 @@ View this project on [CADLAB.io](https://cadlab.io/project/28412).
 
 Initial Mockup of **Project OAK**: 
 
-![image](https://github.com/user-attachments/assets/2595f39f-ea12-41f6-b5c1-0265837f55d5)
+<img src="https://github.com/user-attachments/assets/021fec77-527e-4377-82b5-06b267467087" width="1000">
 
-![image](https://github.com/user-attachments/assets/12b4af40-adff-4fb1-8283-39f0fe6916ce)
+<img src="https://github.com/user-attachments/assets/4de3454b-2c0e-4cc6-ab46-a606e1fb1081" width="350">
 
 (*as work is in progress, the final output may vary from initial rendering)

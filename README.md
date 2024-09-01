@@ -14,3 +14,11 @@
 * The very initial version will be just a simple watch features Time display functions. With further learning from initial version, GMT & Minute repeater complications are added in upcoming version.
 * Also, there will be some digital sensors to create some interaction with the user. (future use case)
 * The initial variant will be powered by 3V Coin cell. Later versions may opt for rechargeable battery.
+
+Initial Mockup of **Project OAK**: 
+
+![image](https://github.com/user-attachments/assets/2595f39f-ea12-41f6-b5c1-0265837f55d5)
+
+![image](https://github.com/user-attachments/assets/12b4af40-adff-4fb1-8283-39f0fe6916ce)
+
+(*as work is in progress, the final output may vary from initial rendering)

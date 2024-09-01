@@ -1,0 +1,18 @@
+.74CBTLV3257BQ_115 :1 ;Encoders, Decoders, Multiplexers & Demultiplexers 8IN 2.3-3.6V 500 mW
+"74CBTLV3257BQ115"
+*STM IC
+*NGS
+*PLB 1="S" 2="1B1" 3="1B2" 4="1A" 5="2B1" 6="2B2" 7="2A" 8="GND" 9="3A" 10="3B2" 11="3B1" 12="4A" 13="4B2" 14="4B1" 15="'OE'" 16="VCC" 17="EP"
+*MXP 17
+*DFN 74CBTLV3257BQ_115
+~!Manufacturer_Name (Nexperia)
+~!Manufacturer_Part_Number (74CBTLV3257BQ,115)
+~!Mouser Part Number (771-74CBTLV3257BQ115)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Nexperia/74CBTLV3257BQ115?qs=jquClx72t9Cqv7jLVFQulg%3D%3D)
+~!Arrow Part Number (74CBTLV3257BQ,115)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/74cbtlv3257bq115/nexperia?region=nac)
+~!Link Datasheet (https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf)
+~!Height (1mm)
+~!3D_Model (74CBTLV3257BQ,115)
+"74CBTLV3257BQ_115"
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 

@@ -1,0 +1,238 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "74CBTLV3257BQ_115"
+   (description "Encoders, Decoders, Multiplexers & Demultiplexers 8IN 2.3-3.6V 500 mW")
+   (family "ANA")
+   (package "74CBTLV3257BQ115")
+   (attribute "Datasheet Link" "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf")
+   (attribute "Geometry.Height" "1mm")
+   (attribute "Manufacturer_Name" "Nexperia")
+   (attribute "Manufacturer_Part_Number" "74CBTLV3257BQ,115")
+   (attribute "Mouser Part Number" "771-74CBTLV3257BQ115")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Nexperia/74CBTLV3257BQ115?qs=jquClx72t9Cqv7jLVFQulg%3D%3D")
+   (attribute "Arrow Part Number" "74CBTLV3257BQ,115")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/74cbtlv3257bq115/nexperia?region=nac")
+   (gate
+    (symbol "74CBTLV3257BQ_115")
+    (pin "S" 1 PS)
+    (pin "1B1" 2 PS)
+    (pin "1B2" 3 PS)
+    (pin "1A" 4 PS)
+    (pin "2B1" 5 PS)
+    (pin "2B2" 6 PS)
+    (pin "2A" 7 PS)
+    (pin "GND" 8 PS)
+    (pin "3A" 9 PS)
+    (pin "3B2" 10 PS)
+    (pin "3B1" 11 PS)
+    (pin "4A" 12 PS)
+    (pin "4B2" 13 PS)
+    (pin "4B1" 14 PS)
+    (pin "$OE$" 15 PS)
+    (pin "VCC" 16 PS)
+    (pin "EP" 17 PS)
+   )
+  )
+  (symbol "74CBTLV3257BQ_115"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 400) (pt 1000 400) (pt 1000 -500) (pt 200 -500) (pt 200 400) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 300 -700) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 400 -700) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 500 -700) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 600 -700) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 -700) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -700) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 600) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 600) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 600) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 600 600) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 500 600) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 400 600) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 300 600) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "74CBTLV3257BQ115"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.75 -1.25)
+      (pt 1.75 -1.25)
+      (pt 1.75 1.25)
+      (pt -1.75 1.25)
+      (pt -1.75 -1.25))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.25 2.75)
+      (pt 3.25 2.75)
+      (pt 3.25 -2.75)
+      (pt -3.25 -2.75)
+      (pt -3.25 2.75))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1.75 0.6)
+      (pt -1.75 1.25)
+      (pt -1.6 1.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1.75 -0.6)
+      (pt -1.75 -1.25)
+      (pt -1.6 -1.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 1.75 -0.6)
+      (pt 1.75 -1.25)
+      (pt 1.6 -1.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 1.6 1.25)
+      (pt 1.75 1.25)
+      (pt 1.75 0.6))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.6 -0.25)
+      (arc (pt -2.600 -0.250) (pt -2.700 -0.300) (pt -2.600 -0.200) (start 180.0) (sweep .0))
+      (pt -2.7 -0.25)
+      (arc (pt -2.700 -0.250) (pt -2.700 -0.300) (pt -2.600 -0.200) (start 180.0) (sweep 180.0))
+      (pt -2.6 -0.25))))
+   (leg 1 (pt -1.800 -0.250) (padstack 1))
+   (leg 2 (pt -1.250 -1.300) (padstack 0))
+   (leg 3 (pt -0.750 -1.300) (padstack 0))
+   (leg 4 (pt -0.250 -1.300) (padstack 0))
+   (leg 5 (pt 0.250 -1.300) (padstack 0))
+   (leg 6 (pt 0.750 -1.300) (padstack 0))
+   (leg 7 (pt 1.250 -1.300) (padstack 0))
+   (leg 8 (pt 1.800 -0.250) (padstack 8))
+   (leg 9 (pt 1.800 0.250) (padstack 9))
+   (leg 10 (pt 1.250 1.300) (padstack 0))
+   (leg 11 (pt 0.750 1.300) (padstack 0))
+   (leg 12 (pt 0.250 1.300) (padstack 0))
+   (leg 13 (pt -0.250 1.300) (padstack 0))
+   (leg 14 (pt -0.750 1.300) (padstack 0))
+   (leg 15 (pt -1.250 1.300) (padstack 0))
+   (leg 16 (pt -1.800 0.250) (padstack 16))
+   (leg 17 (pt 0.000 0.000) (padstack 17))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.240 0.900 0 0 90.000))
+   )
+   (padstack 1
+    (plated false)
+    (pad (layer TCOP) (rectf 0.240 0.900 0 0 0.000))
+   )
+   (padstack 8
+    (plated false)
+    (pad (layer TCOP) (rectf 0.240 0.900 0 0 0.000))
+   )
+   (padstack 9
+    (plated false)
+    (pad (layer TCOP) (rectf 0.240 0.900 0 0 0.000))
+   )
+   (padstack 16
+    (plated false)
+    (pad (layer TCOP) (rectf 0.240 0.900 0 0 0.000))
+   )
+   (padstack 17
+    (plated false)
+    (pad (layer TCOP) (rectf 0.900 1.900 0 0 0.000))
+   )
+   (model "74CBTLV3257BQ,115.stp"
+    (euler -90 0 180)
+    (offset 1.309999942779541 2.5999999046325684 2.049999952316284)
+   )
+  )
+ )
+)

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "74CBTLV3257BQ_115"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-06-30-09:52:25)
+    (mountForm default
+        (footprintRef "74CBTLV3257BQ115")
+        (spec "System")
+    )
+)

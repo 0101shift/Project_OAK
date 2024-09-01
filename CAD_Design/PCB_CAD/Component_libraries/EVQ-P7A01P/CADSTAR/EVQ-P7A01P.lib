@@ -1,0 +1,18 @@
+.EVQ-P7A01P :1 ;Black Side Tactile Switch, Single Pole Single Throw (SPST) 50 mA @ 12 V dc 1.7mm
+EVQP7J01P
+*STM S
+*NGS
+*PLB 1="NO_1" 2="NO_2" 3="COM_1" 4="COM_2"
+*MXP 4
+*DFN EVQ-P7A01P
+~!Manufacturer_Name (Panasonic)
+~!Manufacturer_Part_Number (EVQ-P7A01P)
+~!Mouser Part Number (667-EVQP7A01P)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Panasonic/EVQ-P7A01P?qs=rJ%252BziJWpysz7n3C20u6WAw%3D%3D)
+~!Arrow Part Number (EVQ-P7A01P)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/evqp7a01p/panasonic?region=nac)
+~!Link Datasheet (https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C378.pdf)
+~!Height (1mm)
+~!3D_Model (EVQ-P7A01P)
+EVQ-P7A01P
+1.1!U 2.1!U 3.1!U 4.1!U 

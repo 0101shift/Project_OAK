@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '74CBTLV3257BQ_115'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Nexperia", "74CBTLV3257BQ,115" (!) = "", "74CBTLV3257BQ115", "Other", "771-74CBTLV3257BQ115", "https://www.mouser.co.uk/ProductDetail/Nexperia/74CBTLV3257BQ115?qs=jquClx72t9Cqv7jLVFQulg%3D%3D", "74CBTLV3257BQ,115", "https://www.arrow.com/en/products/74cbtlv3257bq115/nexperia?region=nac", "Encoders, Decoders, Multiplexers & Demultiplexers 8IN 2.3-3.6V 500 mW", "https://assets.nexperia.com/documents/data-sheet/74CBTLV3257.pdf", "1 mm"
+END_PART
+
+END.

@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "EVQP7J01P"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "EVQP7J01P")
+        (spec "default")
+    )
+)

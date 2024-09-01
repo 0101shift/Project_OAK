@@ -1,0 +1,122 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "EVQ-P7A01P"
+   (description "Black Side Tactile Switch, Single Pole Single Throw (SPST) 50 mA @ 12 V dc 1.7mm")
+   (family "SWI")
+   (package "EVQP7J01P")
+   (attribute "Datasheet Link" "https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C378.pdf")
+   (attribute "Geometry.Height" "1mm")
+   (attribute "Manufacturer_Name" "Panasonic")
+   (attribute "Manufacturer_Part_Number" "EVQ-P7A01P")
+   (attribute "Mouser Part Number" "667-EVQP7A01P")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EVQ-P7A01P?qs=rJ%252BziJWpysz7n3C20u6WAw%3D%3D")
+   (attribute "Arrow Part Number" "EVQ-P7A01P")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/evqp7a01p/panasonic?region=nac")
+   (gate
+    (symbol "EVQ-P7A01P")
+    (pin "NO_1" 1 PS)
+    (pin "NO_2" 2 PS)
+    (pin "COM_1" 3 PS)
+    (pin "COM_2" 4 PS)
+   )
+  )
+  (symbol "EVQ-P7A01P"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1000 100) (pt 1000 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "EVQP7J01P"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.45 1.45)
+      (pt 2.05 1.45)
+      (pt 2.05 -1.45)
+      (pt -1.45 -1.45)
+      (pt -1.45 1.45))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.8 2.45)
+      (pt 3.8 2.45)
+      (pt 3.8 -2.45)
+      (pt -3.8 -2.45)
+      (pt -3.8 2.45))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.45 1.45)
+      (pt 2.1 1.45))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.45 -1.45)
+      (pt 2.05 -1.45))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -2.7 0.8)
+      (arc (pt -2.700 0.800) (pt -2.800 0.600) (pt -2.600 0.800) (start -180.0) (sweep 90.0))
+      (pt -2.7 0.6)
+      (arc (pt -2.700 0.600) (pt -2.800 0.600) (pt -2.600 0.800) (start -180.0) (sweep -90.0))
+      (pt -2.7 0.8))))
+   (leg 1 (pt -1.500 0.725) (padstack 0))
+   (leg 2 (pt 2.100 0.725) (padstack 0))
+   (leg 3 (pt -1.500 -0.725) (padstack 0))
+   (leg 4 (pt 2.100 -0.725) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.050 1.400 0 0 0.000))
+   )
+   (model "EVQ-P7A01P.stp"
+    (euler -90 180 180)
+    (offset 0.5099999904632568 -0.07999999821186066 1.2100000381469727)
+   )
+  )
+ )
+)

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'EVQ_P7A01P'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Panasonic", "EVQ-P7A01P" (!) = "", "EVQP7J01P", "Other", "667-EVQP7A01P", "https://www.mouser.co.uk/ProductDetail/Panasonic/EVQ-P7A01P?qs=rJ%252BziJWpysz7n3C20u6WAw%3D%3D", "EVQ-P7A01P", "https://www.arrow.com/en/products/evqp7a01p/panasonic?region=nac", "Black Side Tactile Switch, Single Pole Single Throw (SPST) 50 mA @ 12 V dc 1.7mm", "https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C378.pdf", "1 mm"
+END_PART
+
+END.

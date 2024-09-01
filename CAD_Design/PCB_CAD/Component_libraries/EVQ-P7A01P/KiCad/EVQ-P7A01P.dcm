@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EVQ-P7A01P
+D Black Side Tactile Switch, Single Pole Single Throw (SPST) 50 mA @ 12 V dc 1.7mm
+K
+F https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C378.pdf
+$ENDCMP
+#
+#End Doc Library

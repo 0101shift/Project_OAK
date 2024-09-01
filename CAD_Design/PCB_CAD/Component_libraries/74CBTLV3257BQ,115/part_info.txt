@@ -1,0 +1,9 @@
+Manufacturer=Nexperia
+PartNumber=74CBTLV3257BQ,115
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=17
+Version=2.1
+Released=2018-08-15 17:25:35
+Downloaded=2024-03-25 19:01:08
+3D=Y

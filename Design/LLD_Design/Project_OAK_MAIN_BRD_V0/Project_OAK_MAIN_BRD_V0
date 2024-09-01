@@ -1,0 +1,36 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>G:\Projects\Project_OAK\Design\LLD_Design\Project_OAK_MAIN_BRD_V0\Project_OAK_MAIN_BRD_V0.sch</h1>
+    <p>07/18/24 01:31:51</p>
+    <p>Eeschema (5.1.6)-1</p>
+    <p><b>Component Count:</b>114</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>BT1</td><td>1</td><td>BC-2003</td><td>BC-2003:BC-2003</td><td>Battery:BAT_BC-2003</td><td></td><td></td></tr>
+    <tr><td>C1, C2, C3, C7, C8, C9, C10, C12, C13</td><td>9</td><td>0.1u</td><td>Device:C</td><td>Capacitor_SMD:C_0402_1005Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C4, C14, C15, C16, C17, C18, C19</td><td>7</td><td>10u</td><td>Device:C</td><td>Capacitor_SMD:C_0402_1005Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C6</td><td>1</td><td>4.7u</td><td>Device:C</td><td>Capacitor_SMD:C_0402_1005Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C11</td><td>1</td><td>1u</td><td>Device:C</td><td>Capacitor_SMD:C_0402_1005Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, D16, D17, D18, D19, D20, D21, D22, D23, D24, D25, D26, D27, D28, D29, D30, D31, D32, D33, D34, D35, D36, D37</td><td>37</td><td>LED</td><td>Device:LED</td><td>LED_SMD:LED_0402_1005Metric</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>Q1, Q2, Q3, Q4, Q5, Q6, Q7</td><td>7</td><td>BC547</td><td>Transistor_BJT:BC547</td><td>Package_TO_SOT_SMD:SOT-23</td><td>0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92</td><td></td></tr>
+    <tr><td>R1, R28, R29, R30, R31, R32, R33</td><td>7</td><td>0E</td><td>Device:R</td><td>Resistor_SMD:R_0402_1005Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2, R3, R4, R14, R15, R17</td><td>6</td><td>10k</td><td>Device:R</td><td>Resistor_SMD:R_0402_1005Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R5</td><td>1</td><td>1K</td><td>Device:R</td><td>Resistor_SMD:R_0402_1005Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R6, R13, R18, R19, R22, R23, R26</td><td>7</td><td>10K</td><td>Device:R</td><td>Resistor_SMD:R_0402_1005Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R7, R10, R11, R12</td><td>4</td><td>4.7K</td><td>Device:R</td><td>Resistor_SMD:R_0402_1005Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R8, R9</td><td>2</td><td>1k</td><td>Device:R</td><td>Resistor_SMD:R_0402_1005Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R16, R20, R21, R24, R25, R27</td><td>6</td><td>120E</td><td>Device:R</td><td>Resistor_SMD:R_0402_1005Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>S1, S2, S3</td><td>3</td><td>EVQ-P7A01P</td><td>EVQ-P7A01P:EVQ-P7A01P</td><td>Button_Switch_SMD:EVQP7J01P</td><td></td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>ATmega328PB-MU</td><td>MCU_Microchip_ATmega:ATmega328PB-MU</td><td>Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm</td><td>20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, QFN-32</td><td></td></tr>
+    <tr><td>U2</td><td>1</td><td>RX8130CE</td><td>RX8130CE:RX8130CE</td><td>Crystal:RX8130CE</td><td></td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    

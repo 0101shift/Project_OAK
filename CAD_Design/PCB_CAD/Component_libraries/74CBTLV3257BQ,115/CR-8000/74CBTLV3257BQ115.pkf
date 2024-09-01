@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "74CBTLV3257BQ115"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "74CBTLV3257BQ115")
+        (spec "default")
+    )
+)

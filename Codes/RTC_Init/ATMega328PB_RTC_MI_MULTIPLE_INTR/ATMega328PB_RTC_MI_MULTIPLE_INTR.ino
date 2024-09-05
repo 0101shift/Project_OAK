@@ -10,19 +10,29 @@
 #define REGISTER_ADDRESS_SEC_ALRM 0x0B
 #define REGISTER_ADDRESS_TIM_MODE 0x11
 
+volatile unsigned long last_interrupt_time = 0;  // To store the last interrupt time
+unsigned long debounce_delay = 500;  // 500ms debounce delay
+
 void setup()
 {
   comms();
-  
-  // Set INT0 (PD3) as input
+
+  DDRD &= ~(1 << DDD2);  // Clear PD2 to make it an input
   DDRD &= ~(1 << DDD3);  // Clear PD3 to make it an input
 
-  // Enable pull-up resistor on PD3 (optional, depends on external circuit)
-  PORTD |= (1 << PORTD3);
+  // Enable pull-up resistor on PD2 (optional, depends on external circuit)
+  PORTD |= (1 << PORTD2);
+
+  // Configure INT1 to trigger on falling edge
+  EICRA |= (1 << ISC01);  // ISC01 = 1, ISC00 = 0: Falling edge
+  EICRA &= ~(1 << ISC00);
 
   // Configure INT1 to trigger on falling edge
   EICRA |= (1 << ISC11);  // ISC11 = 1, ISC10 = 0: Falling edge
   EICRA &= ~(1 << ISC10);
+
+  // Enable INT0 interrupt
+  EIMSK |= (1 << INT0);
 
   // Enable INT1 interrupt
   EIMSK |= (1 << INT1);
@@ -31,9 +41,21 @@ void setup()
   sei();
 }
 
+ISR(INT0_vect)
+{
+  unsigned long current_time = millis();  // Get the current time (in ms)
+
+  // Check if enough time has passed since the last interrupt
+  if (current_time - last_interrupt_time > debounce_delay) {
+    PORTB ^= (1 << PB1);
+
+    // Update the last interrupt time
+    last_interrupt_time = current_time;
+  }
+}
+
 ISR(INT1_vect)
 {
-  // INT1 ISR: Executed when INT1 pin is triggered
   PORTB ^= (1 << PB1);
 }
 
@@ -42,8 +64,6 @@ void loop()
   set_sleep_mode(SLEEP_MODE_PWR_DOWN); // Set sleep mode to power-down
   sleep_enable();                      // Enable sleep mode
   sleep_cpu();                         // Enter sleep mode
-
-  // MCU wakes up here after INT1 interrupt
   sleep_disable();                     // Disable sleep mode on wake-up
   comms();
 }
@@ -57,7 +77,7 @@ void comms()
 {
   DDRB |= _BV(PB1);
   PORTB &= ~(1 << PB1);
-  
+
   Wire.begin();
   Serial.begin(9600);  // Initialize Serial for debugging
   while (!Serial);  // Wait for serial port to connect

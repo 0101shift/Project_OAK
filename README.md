@@ -28,10 +28,10 @@ Initial Mockup of **Project OAK**:
 **"Project_OAK_MAIN_BRD_V0.1 is just an Engineering Sample. The design is not Mature."**
 
 
-NOTE: The main purpose of these Engineering Samples is to test the board in all possible ways by using all the available interfaces and controls. Try pushing the MCU to its limit and identify issues and limitations. Also, list out the Hardware changes needed, and any feature to be added to the Main Board so that the upcoming revision will be more feature-rich with fewer failures. This is kind of a playground, apply your creativity and pull some unique creations. 
+NOTE: The main purpose of these engineering samples is to test the board in all possible ways using all the available interfaces and controls. Try pushing the MCU to its limit and identify issues and limitations. Also, list out the Hardware changes needed, and any feature to be added to the Main Board so that the upcoming revision will be more feature-rich with fewer failures. This is kind of a playground, apply your creativity and pull some unique creations. 
 
 
-# Getting started with the Engineering Samples
+# To get started
 
 * Project_OAK_MAIN_BRD_V0.1 embeds all the major interfaces required to execute basic watch functionality.
 * The Main Board contains **ATMega328PB** (MCU) and **RV-8263-C7** (RTC) as major component. The board also contains 36 LEDs (12 for hours and 24 for Minute representation), 3 tactile switches, and 3V supply monitoring.

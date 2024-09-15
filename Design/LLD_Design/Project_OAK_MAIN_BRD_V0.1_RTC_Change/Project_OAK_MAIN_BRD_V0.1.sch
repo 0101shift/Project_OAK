@@ -2821,6 +2821,8 @@ Text Notes 7450 4950 0    50   ~ 0
 Note: Current series resistor changed to 100E
 Text Notes 2050 5000 0    50   ~ 0
 connector signaling to be changed \nto 1&3 rather than 2&4
+Text Notes 6750 900  0    50   ~ 0
+Transistor symbol need to be changed\nto SOT23 type
 Text Notes 3900 5850 0    50   ~ 0
 connect CLKOE, CLKOUT to MCU pins.\nThis will be helpful in performing frequency compensation.
 $EndSCHEMATC

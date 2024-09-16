@@ -43,9 +43,9 @@ NOTE: The main purpose of these engineering samples is to test the board in all 
   * Another way is through the EXT_3V3_IN pin present in the ICSP header (TP1) during programming/debugging. To power the board through ICSP, R1 should be mounted. By default, R1 made **DNI**
 * When programming the MAIN_BRD, change the ARDUINO IDE settings as shown in the below image
   ![image](https://github.com/user-attachments/assets/9ddba8e6-f67e-4086-b126-84e10bf74e95)
-* Since the Main Board is programmed through another Arduino (connected through ICSP), codes from ARDUINO IDE are uploaded by clicking the **Upload Using Programmer (Ctrl+Shift+U)** option. Do not use the normal **upload** option. Otherwise, the code will be uploaded to the programmer Arduino instead of the Main Board.
+* Since the Main Board is programmed through another Arduino (connected through ICSP), codes from ARDUINO IDE are uploaded by clicking the **Upload Using Programmer (Ctrl+Shift+U)** option. Please don't use the normal **upload** option. Otherwise, the code will be uploaded to the programmer Arduino instead of the Main Board.
 
-* These data should be sufficient to start with basic code execution on the Main Board. This repo also contains datasheets, schematics, pin-configuration sheet, BOM and other related docs used in designing Project-OAK_MAIN_BRD_V0.1 Make use of it.
+* These data should be sufficient for basic code execution on the Main Board. This repo also contains datasheets, schematics, pin-configuration sheet, BOM and other related docs used in designing Project-OAK_MAIN_BRD_V0.1 Make use of it.
 
 * New ideas and features are always welcome!
 

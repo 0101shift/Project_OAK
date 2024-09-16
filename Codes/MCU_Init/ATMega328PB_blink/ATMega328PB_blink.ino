@@ -13,8 +13,10 @@ int main(void)
   ************************************************************/
   //  DDRB |= _BV(PB0);  // Set PB0 as output, ignore the rest
   //  DDRB |= _BV(PB1);
-  DDRB |= _BV(PB2);
-  DDRC |= _BV(PC3);
+  //  DDRB |= _BV(PB2);
+  DDRC |= _BV(PC0);
+  DDRC |= _BV(PC1);
+  DDRC |= _BV(PC2);
   //  DDRD |= _BV(PD0);
   DDRD |= _BV(PD1);
   //  DDRD |= _BV(PD6);
@@ -26,8 +28,10 @@ int main(void)
   *************************************************************/
   //  PORTB &= ~(1 << PB0);
   //  PORTB &= ~(1 << PB1);
-  PORTB &= ~(1 << PB2);
-  PORTC |= (1 << PC3);
+  //  PORTB &= ~(1 << PB2);
+  PORTC &= ~(1 << PC0);
+  PORTC &= ~(1 << PC1);
+  PORTC &= ~(1 << PC2);
   //  PORTD |= (1 << PD0);
   PORTD |= (1 << PD1);
   //  PORTD |= (1 << PD6);
@@ -41,8 +45,10 @@ int main(void)
     ********************************************************/
     //    PORTB ^= (1 << PB0);
     //    PORTB ^= (1 << PB1);
-    PORTB ^= (1 << PB2);
-    PORTC ^= (1 << PC3);
+    //    PORTB ^= (1 << PB2);
+    PORTC ^= (1 << PC0);
+    PORTC ^= (1 << PC1);
+    PORTC ^= (1 << PC2);
     //    PORTD ^= (1 << PD0);
     PORTD ^= (1 << PD1);
     //    PORTD ^= (1 << PD6);

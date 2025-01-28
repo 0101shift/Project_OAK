@@ -1,3 +1,8 @@
+/* This library is custom built for ProjectOak design. This library maps the LEDs
+on ProjectOak Main Board to a Clock function. So, the time parameters extracted 
+from RTC sensor is mapped and displayed through on board LEDs using this library
+*/
+
 #include "OakLedMatrix.h"
 #include <util/delay.h>
 
@@ -58,7 +63,7 @@ void deactivateLedMatrix() {
 }
 
 // Activate all LEDs in the OakLedMatrix
-void deactivateLedMatrix() {
+void activateLedMatrixAll() {
     for (uint8_t i = 0; i < ROW_COUNT; i++) {
         *(rows[i].port) |= (1 << rows[i].pin);
     }

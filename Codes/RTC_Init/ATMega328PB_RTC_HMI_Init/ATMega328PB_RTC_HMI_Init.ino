@@ -1,85 +1,81 @@
-#include <Wire.h>
+/**********************************************************************************************************
+  Simple AVR sketch demonstrate the interface of RTC sensor RV-8263-C7 with ATMega328PB. This code is to
+  execute HMI (Half Minute Interrupt) / MI (Minute Interrupt) functions of the RTC sensor. Up on interrupt,
+  RTC sensors sends interrupt pulse to MCU on PD3 pin. This interrupt wakes the MCU up and blinks all
+  the LEDs on the main baord for 100ms and then goes back to sleep.
+
+  Sketch uses "OakLedMatrix" lib which takes care of mapping LED pins to their respective Hr/Min positions
+
+  |Register|         |Function|      |Bit7|  |Bit6|  |Bit5|  |Bit4|  |Bit3|  |Bit2|  |Bit1|  |Bit0|
+  |                                                                                               |
+  |  01h   |         |Control2|      |AIE|   | AF |  | MI |  |HMI |  | TF |  | FD |  | FD |  | FD |
+  |  11h   |        |Timer Mode|     | X |   | X  |  | X  |  | TD |  | TD |  | TE |  | TIE| |TI_TP|
+**********************************************************************************************************/
+
 #include <avr/io.h>
+#include <avr/sleep.h>
 #include <util/delay.h>
+#include <Wire.h>
+#include "OakLedMatrix.h"
 
-#define BUTTON_PIN PD3
-
-#define SLAVE_ADDRESS 0x51  // Replace with your I2C slave address
-#define REGISTER_ADDRESS_CTRL1 0x00
+#define RTC_ADDRESS 0x51
+#define INTERRUPT_PIN PD3
 #define REGISTER_ADDRESS_CTRL2 0x01
-#define REGISTER_ADDRESS_SEC_ALRM 0x0B
 #define REGISTER_ADDRESS_TIM_MODE 0x11
 
+void initRTC() {
+  Wire.begin();
+
+  // Set periodic interrupt to 1/2 minute
+  Wire.beginTransmission(RTC_ADDRESS);
+  Wire.write(REGISTER_ADDRESS_CTRL2); // Control register
+  Wire.write(0x10); // Enable 1/2 minute interrupt
+  Wire.endTransmission();
+
+  Wire.beginTransmission(RTC_ADDRESS);
+  Wire.write(REGISTER_ADDRESS_TIM_MODE); // Periodic Interrupt register
+  Wire.write(0x19);
+  Wire.endTransmission();
+}
+
+void initInterrupt() {
+  // Set PD3 as input
+  DDRD &= ~(1 << INTERRUPT_PIN);
+
+  // Enable pull-up resistor on PD3 (optional, depends on external circuit)
+  PORTD |= (1 << PORTD3);
+
+  // Enable external interrupt on INT1 (PD3)
+  EICRA |= (1 << ISC11); // Falling edge generates interrupt
+  EICRA &= ~(1 << ISC10);
+  EIMSK |= (1 << INT1);  // Enable INT1
+}
+
 void setup() {
+  // Initialize OakLedMatrix
+  initMatrix();
 
-  DDRB |= _BV(PB1);
-  PORTB &= ~(1 << PB1);
-  DDRD &= ~(1 << BUTTON_PIN);
+  // Initialize RTC and interrupt
+  initRTC();
+  initInterrupt();
 
-  Wire.begin();  // Initialize I2C
-  Serial.begin(9600);  // Initialize Serial for debugging
-  while (!Serial);  // Wait for serial port to connect
-
-  Serial.println("I2C Communication Ready");
-
-  // Write to a register
-  writeRegister(SLAVE_ADDRESS, REGISTER_ADDRESS_CTRL1, 0x58); // Example: Writing 0x55 to register 0x00
-  delay(2000);
-  writeRegister(SLAVE_ADDRESS, REGISTER_ADDRESS_CTRL2, 0x90);
-  writeRegister(SLAVE_ADDRESS, REGISTER_ADDRESS_TIM_MODE, 0x19);
+  // Enable global interrupts
+  sei();
 }
 
-void loop() {
-  setup();
-
-  uint8_t button_state = 0;
-  uint8_t last_button_state = 1;  // Assuming button is not pressed at startup
-
-  while (1)
-  {
-    // Read the current state of the button
-    button_state = PIND & (1 << BUTTON_PIN);
-
-    // Check if button was pressed (low state)
-    if (button_state == 0 && last_button_state != 0)
-    {
-      // Check again to confirm the button is still pressed
-      if ((PIND & (1 << BUTTON_PIN)) == 0)
-      {
-        // Toggle the LED
-        PORTB ^= (1 << PB1);
-        writeRegister(SLAVE_ADDRESS, REGISTER_ADDRESS_CTRL2, 0x90);
-        Serial.println("Alarm!");
-      }
-    }
-
-    // Update the last button state
-    last_button_state = button_state;
-  }
-
-  return 0;
+ISR(INT1_vect) {
+  activateLedMatrixAll(); // Toggle the LED
+  _delay_ms(100);
+  deactivateLedMatrix();
 }
 
-// Function to write to a register
-void writeRegister(uint8_t deviceAddress, uint8_t registerAddress, uint8_t data) {
-  Wire.beginTransmission(deviceAddress);  // Begin I2C transmission to the slave
-  Wire.write(registerAddress);  // Send the register address
-  Wire.write(data);  // Send the data to write
-  Wire.endTransmission();  // End the transmission
-}
+void loop()
+{
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN); // Set sleep mode to power-down
+  sleep_enable();                      // Enable sleep mode
+  sleep_cpu();                         // Enter sleep mode
 
-// Function to read from a register
-uint8_t readRegister(uint8_t deviceAddress, uint8_t registerAddress) {
-  uint8_t data = 0;
-
-  Wire.beginTransmission(deviceAddress);  // Begin I2C transmission to the slave
-  Wire.write(registerAddress);  // Send the register address
-  Wire.endTransmission(false);  // End the transmission with a repeated start
-
-  Wire.requestFrom(deviceAddress, (uint8_t)1);  // Request 1 byte of data
-  if (Wire.available()) {
-    data = Wire.read();  // Read the received data
-  }
-
-  return data;
+  // MCU wakes up here after INT1 interrupt
+  sleep_disable();                     // Disable sleep mode on wake-up
+  initRTC();
 }

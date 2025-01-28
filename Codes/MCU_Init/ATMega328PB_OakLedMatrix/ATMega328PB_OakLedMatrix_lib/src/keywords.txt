@@ -1,0 +1,14 @@
+# Functions
+initMatrix	KEYWORD1
+activateLedMatrix	KEYWORD1
+deactivateLedMatrix	KEYWORD1
+activateLedMatrixAll	KEYWORD1
+LedClockHourTime	KEYWORD1
+LedClockMinuteTime	KEYWORD1
+
+# Constants
+ROW_COUNT	KEYWORD2
+COL_COUNT	KEYWORD2
+
+# Structures
+GPIO	KEYWORD2

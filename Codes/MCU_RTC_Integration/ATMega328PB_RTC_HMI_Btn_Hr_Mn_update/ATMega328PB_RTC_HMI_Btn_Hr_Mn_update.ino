@@ -1,0 +1,231 @@
+/**********************************************************************************************************
+  Simple AVR sketch demonstrate the interface of RTC sensor RV-8263-C7 with ATMega328PB. This code is to
+  execute Hour, Minute & MI functions of the RTC sensor and outputs the data using on-board LEDs (visulization).
+  Post power on, MCU goes to sleep and wakes up on interrupt generated either by the RTC sensor (every minute)
+  or with button press (PWR BTN). based on the button press duration, specific set of actions are performed.
+  If button press short (50ms), the device outputs RTC sensor data by lighting up the LEDs (Time Indication)
+  and goes back to sleep. If button press long (1000ms), the device wakes up from pwr-down mode and stays
+  in active state by blinking all the LEDs onboard (100ms). This allows user to update Time by pressing
+  UP & DWN button to adjust Hour & Minute time respectively. i.e. Post wake up, the device set to update
+  Hour time by pressing UP button & Minute time is updated by pressing DWN button. Once time is updated,
+  the device is put back to sleep by short pressing the PWR button.
+
+  Sketch uses "OakLedMatrix" lib which takes care of mapping LED pins to their respective Hr/Min positions
+  Sketch uses "RV-8263-C7" lib which takes care of interface between MCU and RV-8263-C7 RTC sensor
+
+  Here are the list of registers that are modified / accessed in this program
+
+  |Register|         |Function|      |Bit7|  |Bit6|  |Bit5|  |Bit4|  |Bit3|  |Bit2|  |Bit1|  |Bit0|
+  |                                                                                               |
+  |  01h   |         |Control2|      |AIE |  | AF |  | MI |  |HMI |  | TF |  | FD|   | FD |  | FD |
+  |  04h   |         |Seconds|       | OS |  | 40 |  | 20 |  | 10 |  | 8  |  | 4 |   | 2 |   | 1  |
+  |  05h   |         |minutes|       | X  |  | 40 |  | 20 |  | 10 |  | 8  |  | 4 |   | 2 |   | 1  |
+  |  06h   |          |Hours|        | X  |  | X  |  |AMPM|  | 10 |  | 8  |  | 4 |   | 2 |   | 1  |
+  |  07h   |          |Date|         | X  |  | X  |  | 20 |  | 10 |  | 8  |  | 4 |   | 2 |   | 1  |
+  |  08h   |         |Weekday|       | X  |  | X  |  | X  |  | X  |  | X  |  | 4 |   | 2 |   | 1  |
+  |  09h   |          |Month|        | X  |  | X  |  | X  |  | 10 |  | 8  |  | 4 |   | 2 |   | 1  |
+  |  0Ah   |          |Year|         | 80 |  | 40 |  | 20 |  | 10 |  | 8  |  | 4 |   | 2 |   | 1  |
+  |  11h   |       |Timer Mode|      | X  |  | X  |  | X  |  | TD |  | TD |  |TE |   |TIE|  |TI_TP|
+**********************************************************************************************************/
+
+#include <avr/io.h>
+#include <avr/sleep.h>
+#include <util/delay.h>
+#include <RV-8263-C7.h>
+#include <OakLedMatrix.h>
+#include <math.h>
+
+#define HMI_INTERRUPT_PIN PD3   // RTC interrupt (INT1)
+#define PWR_BUTTON_PIN PD2   // Push button interrupt (INT0)
+#define UP_BUTTON_PIN PD4       // Button to increase value
+#define DWN_BUTTON_PIN PD5      // Button to decrease value
+#define SHORT_PRESS_DURATION 50   // Duration in milliseconds
+#define LONG_PRESS_DURATION 1000  // Duration in milliseconds
+
+volatile bool wakeUpFlag = false;      // Interrupt flag to indicate wake-up event
+volatile uint16_t pressDuration = 0;   // Stores button press timestamp
+volatile bool buttonPressed = false;   // Flag for button press event
+volatile uint8_t stayAwake = false;    // Flag to keep MCU awake
+volatile bool inUpdateMode = false; // Flag to track update mode
+
+void setup() {
+  initMatrix();
+  initRTC();
+  _delay_ms(1000);
+
+  // Configure RTC for Half-Minute Interrupt (HMI)
+  writeRegister(0x01, 0b00100000); // Set periodic interrupt to Minute
+  writeRegister(0x11, 0b00011001); // Enable periodic interrupt
+
+  // Configure PD3 (INT1) for RTC interrupt (falling edge)
+  DDRD &= ~(1 << HMI_INTERRUPT_PIN); // Set PD3 as input
+  PORTD |= (1 << HMI_INTERRUPT_PIN); // Enable pull-up resistor on PD3
+  EICRA |= (1 << ISC11); // Falling edge triggers INT1
+  EICRA &= ~(1 << ISC10);
+  EIMSK |= (1 << INT1);  // Enable INT1 interrupt
+
+  // Configure PD2 (INT0) for push-button wake-up (falling edge)
+  DDRD &= ~(1 << PWR_BUTTON_PIN); // Set PD2 as input
+  PORTD |= (1 << PWR_BUTTON_PIN); // Enable pull-up resistor on PD3
+  EICRA |= (1 << ISC01);
+  EICRA &= ~(1 << ISC00);
+  EIMSK |= (1 << INT0);  // Enable INT0 interrupt
+
+  // Configure navigation buttons (PD4, PD5) as inputs with pull-ups
+  DDRD &= ~((1 << UP_BUTTON_PIN) | (1 << DWN_BUTTON_PIN));
+  PORTD |= (1 << UP_BUTTON_PIN) | (1 << DWN_BUTTON_PIN);
+
+  sei(); // Enable global interrupts
+}
+
+// Interrupt Service Routine (ISR) for RTC wake-up on PD3 (INT1)
+ISR(INT1_vect) {
+  wakeUpFlag = true;
+}
+
+// Interrupt Service Routine (ISR) for push-button wake-up on PD2 (INT0)
+ISR(INT0_vect) {
+  buttonPressed = true;  // Flag to handle the button press in the main loop
+}
+
+void loop() {
+  if (buttonPressed) {
+    _delay_ms(50);  // Basic debounce delay
+    buttonPressed = false;
+
+    // Measure press duration
+    pressDuration = 0;
+    while (!(PIND & (1 << PWR_BUTTON_PIN))) {
+      _delay_ms(10);  // Increment duration in 10ms steps
+      pressDuration += 10;
+      if (pressDuration >= LONG_PRESS_DURATION) {
+        break;  // Stop counting if long press is detected
+      }
+    }
+
+    if (pressDuration >= LONG_PRESS_DURATION) {
+      stayAwake = true;  // Set stayAwake, preventing sleep
+      functionLongPress();
+      enterUpdateMode();
+    } else if (pressDuration >= SHORT_PRESS_DURATION) {
+      stayAwake = false;  // Allow sleep
+      functionShortPress();
+    }
+  }
+
+  if (wakeUpFlag) {
+    wakeUpFlag = false;
+    displayTime();
+  }
+
+  if (!stayAwake && !inUpdateMode) {
+    enterSleepMode();
+  }
+}
+
+// Function to enter power-down sleep mode
+void enterSleepMode() {
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN); // Power-down mode
+  sleep_enable(); // Enable sleep mode
+  sleep_cpu(); // Enter sleep mode (wait for interrupt)
+  sleep_disable(); // Disable sleep after waking up
+}
+
+// Function to get RTC time and display it using LED matrix
+void displayTime() {
+  uint8_t hours, minutes, seconds, date, day, month, year;
+  const char period[3];
+
+  getTime(hours, minutes, seconds, date, day, month, year, period);
+
+  // Convert minutes to corresponding LED index (2.5 min per LED)
+  uint8_t minuteMap = round(minutes / 2.5);
+
+  // Show hour and minute time for 1 second
+  uint16_t displayDuration = 500 / 10;  // 100ms per toggle for 0.5 second
+
+  for (uint16_t i = 0; i < displayDuration; i++) {
+    LedClockHourTime(hours);
+    _delay_ms(5);
+    LedClockMinuteTime(minuteMap);
+    _delay_ms(5);
+  }
+
+  deactivateLedMatrix(); // Turn off LEDs
+}
+
+// === Short Press Function ===
+void functionShortPress() {
+  displayTime();
+}
+
+// === Long Press Function ===
+void functionLongPress() {
+  activateLedMatrixAll();
+  _delay_ms(100);
+  deactivateLedMatrix();
+  _delay_ms(100);
+}
+
+// === LED Navigation Mode for Setting Hour ===
+void enterUpdateMode() {
+  inUpdateMode = true;
+  uint8_t newHour = 12;   // Default hour selection
+  uint8_t newMinute = 24; // Default minute selection
+  uint8_t up_button_state, dwn_button_state, pwr_button_state;
+  uint8_t last_button_state = 0;
+
+  while (inUpdateMode) {
+    // Read button states
+    up_button_state = PIND & (1 << UP_BUTTON_PIN);
+    dwn_button_state = PIND & (1 << DWN_BUTTON_PIN);
+    pwr_button_state = PIND & (1 << PWR_BUTTON_PIN);
+
+    // If any button was pressed
+    if ((up_button_state == 0 && last_button_state != 0) ||
+        (dwn_button_state == 0 && last_button_state != 0) ||
+        (pwr_button_state == 0 && last_button_state != 0)) {
+
+      _delay_ms(100); // Debounce delay
+
+      // Change hour
+      if ((PIND & (1 << UP_BUTTON_PIN)) == 0) {
+        newHour = (newHour == 12) ? 1 : newHour + 1;
+      }
+
+      // Change minute
+      if ((PIND & (1 << DWN_BUTTON_PIN)) == 0) {
+        newMinute = (newMinute == 24) ? 1 : newMinute + 1;
+      }
+
+      // Confirm and update RTC
+      if ((PIND & (1 << PWR_BUTTON_PIN)) == 0) {
+        updateRTC(newHour, newMinute);
+        inUpdateMode = false;
+        return;
+      }
+    }
+
+    // Display hour LED navigation
+    LedClockHourTime(newHour);
+    _delay_ms(5);
+    LedClockMinuteTime(newMinute);
+    _delay_ms(5); 
+
+    // Store last button state
+    last_button_state = up_button_state | dwn_button_state | pwr_button_state;
+  }
+}
+
+// === Update RTC with New Hour & Minute ===
+void updateRTC(uint8_t newHour, uint8_t newMinute) {
+  uint8_t nowHour, nowMinutes, nowSeconds, nowDate, nowDay, nowMonth, nowYear;
+  const char nowPeriod[3];
+
+  getTime(nowHour, nowMinutes, nowSeconds, nowDate, nowDay, nowMonth, nowYear, nowPeriod);
+
+  uint8_t rtcMinute = round(newMinute * 2.5);
+  rtcMinute = (rtcMinute >= 60) ? 59 : rtcMinute; // Ensure it's within valid range
+
+  updateTime(newHour, rtcMinute, nowSeconds, nowDate, nowDay, nowMonth, nowYear, nowPeriod);
+}

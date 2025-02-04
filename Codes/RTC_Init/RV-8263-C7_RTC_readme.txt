@@ -51,21 +51,21 @@ Major functions with this register are:
 6. TF flag is set due to HMI,						01h = 00011000 -----> 01h = 18h (read)
 7. TF flag is cleared post interrupt,				01h = 00xx0000 -----> 01h = 20h / 10h (write)	 
 
-NOTE 2: The generation of interrupts from the Alarm Function is controlled via bit Alarm Interrupt Enable. If bit AIE is enabled, the INT pin follows the condition of bit AF. 
+NOTE 3: The generation of interrupts from the Alarm Function is controlled via bit Alarm Interrupt Enable. If bit AIE is enabled, the INT pin follows the condition of bit AF. 
 AF remains set until cleared by command. Once AF has been cleared, it will only be set again when the time increments to match the alarm condition once more. 
 Alarm registers which have their AE_x bit at logic 1 are ignored.
 
-NOTE 3: By clearing the alarm enable bit (AE_x) of one or more of the alarm registers, the corresponding alarm condition(s) are active. 
+NOTE 4: By clearing the alarm enable bit (AE_x) of one or more of the alarm registers, the corresponding alarm condition(s) are active. 
 When an alarm occurs, AF is set logic 1. The asserted AF can be used to generate an interrupt (INT). The AF is cleared by command.
 
-NOTE 4: The Minute Interrupt (bit MI) and Half Minute Interrupt (bit HMI) are pre-defined timers for generating interrupt pulses on pin INT. 
+NOTE 5: The Minute Interrupt (bit MI) and Half Minute Interrupt (bit HMI) are pre-defined timers for generating interrupt pulses on pin INT. 
 The minute and half minute interrupts must only be used when the frequency offset is set to normal mode. In normal mode, the interrupt pulses on pin INT are 15.625 ms wide.
 
-NOTE 5: When starting MI, the first interrupt will be generated after 1 second to 59 seconds. When starting HMI, the first interrupt will be generated after 1 second to 29 seconds. 
+NOTE 6: When starting MI, the first interrupt will be generated after 1 second to 59 seconds. When starting HMI, the first interrupt will be generated after 1 second to 29 seconds. 
 Subsequent periods do not have such a delay. The timers can be enabled independently from one another.
 However, a Minute Interrupt enabled on top of a Half Minute Interrupt is not distinguishable.
 
-NOTE 6: The Timer Flag (bit TF) is set logic 1 on the first trigger of the Countdown Timer or the MI and HMI Interrupt. 
+NOTE 7: The Timer Flag (bit TF) is set logic 1 on the first trigger of the Countdown Timer or the MI and HMI Interrupt. 
 The purpose of the flag is to allow the controlling system to interrogate what caused the interrupt: Timer/MI/HMI or Alarm. 
 The flag can be read and cleared by command. See Timer Register 11h for more details. 
 

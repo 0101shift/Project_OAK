@@ -5,6 +5,7 @@ deactivateLedMatrix	KEYWORD1
 activateLedMatrixAll	KEYWORD1
 LedClockHourTime	KEYWORD1
 LedClockMinuteTime	KEYWORD1
+activateRandomLed	KEYWORD1
 
 # Constants
 ROW_COUNT	KEYWORD2

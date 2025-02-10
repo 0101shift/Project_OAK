@@ -5,6 +5,7 @@ from RTC sensor is mapped and displayed through on board LEDs using this library
 
 #include "OakLedMatrix.h"
 #include <util/delay.h>
+#include <stdlib.h>
 
 // Since the OakLedMatrix GPIO connectivity is fixed, the GPIO configurations are defined in the library itself 
 GPIO rows[ROW_COUNT] = {
@@ -75,49 +76,63 @@ void activateLedMatrixAll() {
 // LED patterns for hour display
 void LedClockHourTime(uint8_t pattern) {
     switch (pattern) {
-        case 1: activateLedMatrix(0, 0); break;		//12'o Clock
-        case 2: activateLedMatrix(0, 1); break;		//1'o Clock
-        case 3: activateLedMatrix(0, 2); break;		//2'o Clock
-        case 4: activateLedMatrix(0, 3); break;		//3'o Clock
-        case 5: activateLedMatrix(0, 4); break;		//4'o Clock
-        case 6: activateLedMatrix(0, 5); break;		//5'o Clock
-        case 7: activateLedMatrix(1, 5); break;		//6'o Clock
-        case 8: activateLedMatrix(1, 4); break;		//7'o Clock
-        case 9: activateLedMatrix(1, 3); break;		//8'o Clock
-        case 10: activateLedMatrix(1, 2); break;	//9'o Clock
-        case 11: activateLedMatrix(1, 1); break;	//10'o Clock
-        case 12: activateLedMatrix(1, 0); break;	//11'o Clock
+        case 1: activateLedMatrix(0, 1); break;		//1'o Clock
+        case 2: activateLedMatrix(0, 2); break;		//2'o Clock
+        case 3: activateLedMatrix(0, 3); break;		//3'o Clock
+        case 4: activateLedMatrix(0, 4); break;		//4'o Clock
+        case 5: activateLedMatrix(0, 5); break;		//5'o Clock
+        case 6: activateLedMatrix(1, 5); break;		//6'o Clock
+        case 7: activateLedMatrix(1, 4); break;		//7'o Clock
+        case 8: activateLedMatrix(1, 3); break;		//8'o Clock
+        case 9: activateLedMatrix(1, 2); break;		//9'o Clock
+        case 10: activateLedMatrix(1, 1); break;	//10'o Clock
+        case 11: activateLedMatrix(1, 0); break;	//11'o Clock
+		case 12: activateLedMatrix(0, 0); break;	//12'o Clock
         default: deactivateLedMatrix(); break;
     }
 }
 
 // LED patterns for minute display
 void LedClockMinuteTime(uint8_t pattern) {
-    switch (pattern) {
-        case 1: activateLedMatrix(5, 0); break;		//0.0 Minute
-        case 2: activateLedMatrix(2, 0); break;		//2.5 Minute
-        case 3: activateLedMatrix(2, 1); break;		//5.0 Minute
-        case 4: activateLedMatrix(2, 2); break;		//7.5 Minute
-        case 5: activateLedMatrix(2, 3); break;		//10 Minute
-        case 6: activateLedMatrix(2, 4); break;		//12.5 Minute
-        case 7: activateLedMatrix(2, 5); break;		//15 Minute
-        case 8: activateLedMatrix(3, 5); break;		//17.5 Minute
-        case 9: activateLedMatrix(3, 4); break;		//20 Minute
-        case 10: activateLedMatrix(3, 3); break;	//22.5 Minute	
-        case 11: activateLedMatrix(3, 2); break;	//25 Minute	
-        case 12: activateLedMatrix(3, 1); break;	//27.5 Minute
-        case 13: activateLedMatrix(3, 0); break;	//30 Minute
-        case 14: activateLedMatrix(4, 0); break;	//32.5 Minute
-        case 15: activateLedMatrix(4, 1); break;	//35 Minute
-        case 16: activateLedMatrix(4, 2); break;	//37.5 Minute
-        case 17: activateLedMatrix(4, 3); break;	//40 Minute
-        case 18: activateLedMatrix(4, 4); break;	//42.5 Minute
-        case 19: activateLedMatrix(4, 5); break;	//45 Minute
-        case 20: activateLedMatrix(5, 5); break;	//47.5 Minute
-        case 21: activateLedMatrix(5, 4); break;	//50 Minute
-        case 22: activateLedMatrix(5, 3); break;	//52.5 Minute
-        case 23: activateLedMatrix(5, 2); break;	//55 Minute
-        case 24: activateLedMatrix(5, 1); break;	//57.5 Minute
+    switch (pattern) { 
+		case 0: activateLedMatrix(5, 0); break;		//0.0 Minute
+        case 1: activateLedMatrix(2, 0); break;		//2.5 Minute
+        case 2: activateLedMatrix(2, 1); break;		//5.0 Minute
+        case 3: activateLedMatrix(2, 2); break;		//7.5 Minute
+        case 4: activateLedMatrix(2, 3); break;		//10 Minute
+        case 5: activateLedMatrix(2, 4); break;		//12.5 Minute
+        case 6: activateLedMatrix(2, 5); break;		//15 Minute
+        case 7: activateLedMatrix(3, 5); break;		//17.5 Minute
+        case 8: activateLedMatrix(3, 4); break;		//20 Minute
+        case 9: activateLedMatrix(3, 3); break;		//22.5 Minute	
+        case 10: activateLedMatrix(3, 2); break;	//25 Minute	
+        case 11: activateLedMatrix(3, 1); break;	//27.5 Minute
+        case 12: activateLedMatrix(3, 0); break;	//30 Minute
+        case 13: activateLedMatrix(4, 0); break;	//32.5 Minute
+        case 14: activateLedMatrix(4, 1); break;	//35 Minute
+        case 15: activateLedMatrix(4, 2); break;	//37.5 Minute
+        case 16: activateLedMatrix(4, 3); break;	//40 Minute
+        case 17: activateLedMatrix(4, 4); break;	//42.5 Minute
+        case 18: activateLedMatrix(4, 5); break;	//45 Minute
+        case 19: activateLedMatrix(5, 5); break;	//47.5 Minute
+        case 20: activateLedMatrix(5, 4); break;	//50 Minute
+        case 21: activateLedMatrix(5, 3); break;	//52.5 Minute
+        case 22: activateLedMatrix(5, 2); break;	//55 Minute
+        case 23: activateLedMatrix(5, 1); break;	//57.5 Minute
         default: deactivateLedMatrix(); break;
+    }
+}
+
+// Function to activate LEDs in a completely random order
+void activateRandomLed() {
+    deactivateLedMatrix();  // Clear all LEDs before random activation
+
+    for (uint8_t i = 0; i < TOTAL_LEDS; i++) {
+        uint8_t row = rand() % ROW_COUNT;
+        uint8_t col = rand() % COL_COUNT;
+        activateLedMatrix(row, col);
+
+        // Simulate LED on time
+        _delay_ms(50);  // Adjust delay for better visual effect
     }
 }

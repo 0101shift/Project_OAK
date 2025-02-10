@@ -11,6 +11,7 @@ from RTC sensor is mapped and displayed through on board LEDs using this library
 // Matrix dimensions
 #define ROW_COUNT 6
 #define COL_COUNT 6
+#define TOTAL_LEDS (ROW_COUNT * COL_COUNT)
 
 typedef struct {
     volatile uint8_t *port;
@@ -27,5 +28,8 @@ void activateLedMatrixAll(void);
 // Application-specific functions
 void LedClockHourTime(uint8_t pattern);
 void LedClockMinuteTime(uint8_t pattern);
+
+// Animations
+void activateRandomLed(void);
 
 #endif // OAKLEDMATRIX_H

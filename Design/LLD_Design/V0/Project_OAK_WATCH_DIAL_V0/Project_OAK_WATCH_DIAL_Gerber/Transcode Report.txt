@@ -1,0 +1,13 @@
+
+
+   ---- Transcoding 'G:\Projects\Project_OAK\Design\LLD_Design\V0\Project_OAK_WATCH_DIAL_V0\Project_OAK_WATCH_DIAL_Gerber\Project_OAK_WATCH_DIAL_V0-B_SilkS.gbr' ----   Sun Jul  6 20:18:12 2025
+
+D10   --> D100
+D11   --> D101
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'G:\Projects\Project_OAK\Design\LLD_Design\V0\Project_OAK_WATCH_DIAL_V0\Project_OAK_WATCH_DIAL_Gerber\Project_OAK_WATCH_DIAL_V0-Edge_Cuts.gbr' ----   Sun Jul  6 20:18:13 2025
+
+D10   --> D102
+-----------------------------------------------------------------

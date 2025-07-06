@@ -1,0 +1,20 @@
+
+
+   ---- Transcoding 'G:\Projects\Project_OAK\Design\LLD_Design\V0\Project_OAK_HEX_COVER_OUTER_V0\Project_OAK_HEX_COVER_OUTER_Gerber\Project_OAK_HEX_COVER_OUTER_V0-B_SilkS.gbr' ----   Sun Jul  6 20:41:33 2025
+
+D10   --> D100
+D11   --> D101
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'G:\Projects\Project_OAK\Design\LLD_Design\V0\Project_OAK_HEX_COVER_OUTER_V0\Project_OAK_HEX_COVER_OUTER_Gerber\Project_OAK_HEX_COVER_OUTER_V0-Edge_Cuts.gbr' ----   Sun Jul  6 20:41:33 2025
+
+D10   --> D102
+D11   --> D103
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'G:\Projects\Project_OAK\Design\LLD_Design\V0\Project_OAK_HEX_COVER_OUTER_V0\Project_OAK_HEX_COVER_OUTER_Gerber\Project_OAK_HEX_COVER_OUTER_V0-F_Mask.gbr' ----   Sun Jul  6 20:41:33 2025
+
+D10   --> D104
+-----------------------------------------------------------------

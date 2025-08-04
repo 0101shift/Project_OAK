@@ -1,4 +1,4 @@
-# ⌚️ Project_OAK (Open Art Work)
+# ⌚️ Project OAK (Open Art Work)
 
 > *An approach to mimic analogue watch complications in a digital timepiece, one LED at a time.*
 

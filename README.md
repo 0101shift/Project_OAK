@@ -50,13 +50,13 @@ This initial version is basically powered by a **3V coin cell**, with future var
 
 ## 💎 Initial Mockup
 
-![Initial Mockup](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/CAD_Design/Mockup_Images/Project_OAK_Full_ASSY.jpeg)
+![Initial Mockup](CAD_Design/Mockup_Images/Project_OAK_Full_ASSY.jpeg)
 
-![Complete Assembly](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/CAD_Design/Mockup_Images/Project_OAK_Full_ASSY_1.jpeg)
+![Complete Assembly](CAD_Design/Mockup_Images/Project_OAK_Full_ASSY_1.jpeg)
 
-![Cross-section View](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/CAD_Design/Mockup_Images/Project_OAK_ASSY_Cross-section.jpeg)
+![Cross-section View](CAD_Design/Mockup_Images/Project_OAK_ASSY_Cross-section.jpeg)
 
-![Exploded View](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/CAD_Design/Mockup_Images/Project_OAK_Exploaded_view.jpeg)
+![Exploded View](CAD_Design/Mockup_Images/Project_OAK_Exploded_view.jpeg)
 
 > *(These are the outputs from V0.1 variant. Design changes are expected in V0.2)*
 
@@ -64,7 +64,7 @@ This initial version is basically powered by a **3V coin cell**, with future var
 
 ## 🔧 Prototyping
 
-📌 **`Project_OAK_MAIN_BRD_V0.1` is an engineering sample. The design is not mature enough for mass production.**
+📌 **[Project_OAK_MAIN_BRD_V0.1](Design/LLD_Design/V0.1/Project_OAK_MAIN_BRD_V0.1_RTC_Change/Project_OAK_MAIN_BRD_V0.1.pdf) is an engineering sample. The design is not mature enough for mass production.**
 
 The primary goal of this variant is to **test all available interfaces, validate MCU performance, identify design flaws, and iterate for improvements**.
 
@@ -77,8 +77,8 @@ Consider this board a creative playground, push its limits. Explore unique featu
 The main board, `Project_OAK_MAIN_BRD_V0.1`, includes the following:
 
 ### 🔩 Key Components
-- **Microcontroller (MCU)**: `ATMega328PB`
-- **Real-Time Clock (RTC)**: `RV-8263-C7`
+- **Microcontroller (MCU)**: [ATMega328PB](Datasheet/ATMEGA328PB.pdf)
+- **Real-Time Clock (RTC)**: [RV-8263-C7](Datasheet/RV-8263-C7.pdf)
 - **LEDs**: 36 total (12 for hour, 24 for minute)
 - **Buttons**: 3 tactile switches
 - **Power Monitor**: 3V supply sensing
@@ -107,7 +107,7 @@ The board can be programmed using the **Arduino IDE** via the ISP function.
 > - Refer to this GitHub repo on how to burn Bootloader and how to flash code through Arduino IDE [MiniCore](https://github.com/MCUdude/MiniCore)
 > - When programming the MAIN_BRD, update the ARDUINO IDE settings as shown below.
 
-![Arduino IDE settings](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/Reference_docs/Project_OAK_Arduino_Programming_Settings.png)
+![Arduino IDE settings](Reference_docs/Project_OAK_Arduino_Programming_Settings.png)
 
 #### ❤️‍🔥 Let me know what you think of this project, I'd love to hear your thoughts!
 

@@ -1,52 +1,116 @@
-**The repository contains all the files related to Project_OAK**
+# ⌚️ Project_OAK (Open Art Work)
 
-View Project OAK SCH and DSN files on [CADLAB.io](https://cadlab.io/project/28412)
+> *An approach to mimic analogue watch complications in a digital timepiece, one LED at a time.*
 
-# Short brief about the project:
+---
 
-**An approach in bringing Mechanical complications to Digital timepieces.**
+## 📁 Repository Overview
 
-* Designing a normal analog watch with digital parts is basic but, recreating one of the mechanical complications 
-  into a digital watch would be interesting. 
-* Mechanical complications like Minute Repeater, GMT & moon phase are considered a few cool complications that have ever been designed in mechanical watches.
-    * Minute Repeater is a complication where the watch indicates time through chimes.
-    * GMT complication helps you to track one more additional time zone along with the current one.
-    * Moon-phase complication helps you to keep track of the full moon.
-* Though these complications are already available in smartwatches, recreating them locally with little hardware logic is cool. 
-* To make it cooler, the whole watch body is going to be made from PCBs with suitable colour and finish to give the analog touch.
-* The very initial version will be just a simple watch that features Time display functions. With further learning from the initial version, GMT & Minute repeater complications will be added to the upcoming version.
-* Also, there will be a few digital sensors to create some interaction with the user. (future use case)
-* The initial variant will be powered by a 3V Coin cell. Later versions may opt for a rechargeable battery.
+This repository contains all files related to **Project_OAK**, including:
+- Design (DSN) files
+- Datasheets
+- Pin configuration sheet
+- BOM (Bill of Materials)
+- Source code and libraries
 
-Initial Mockup of **Project OAK**: 
+📎 **Project OAK SCH and DSN files can be viewed on [CADLAB.io](https://cadlab.io/project/28412)**
 
-![Project_OAK](https://github.com/user-attachments/assets/a187dfe7-927f-47bf-b156-ca0d9f44ddec)
+---
 
-(*as work is in progress, the final output may vary from the initial rendering)
+## 📖 Project Overview
 
+**Project_OAK** explores a different approach to designing digital timepieces that mimic the beauty and intricacy of **mechanical watch complications**.
 
-**"Project_OAK_MAIN_BRD_V0.1 is just an Engineering Sample. The design is not Mature."**
+While building a digitalised analogue-style watch is fairly common, recreating some of the mechanical features in a purely digital watch is both challenging and exciting.
 
+### ⛓ Key Mechanical Complications Reimagined:
+- **Minute Repeater**: Indicates time using chimes.
+- **GMT**: Tracks a second time zone in addition to the local time.
+- **And more** ...
 
-NOTE: The main purpose of these engineering samples is to test the board in all possible ways using all the available interfaces and controls. Try pushing the MCU to its limit and identify issues and limitations. Also, list out the Hardware changes needed, and any feature to be added to the Main Board so that the upcoming revision will be more feature-rich with fewer failures. This is kind of a playground, apply your creativity and pull some unique creations. 
+> Although smartwatches offer these functions via software, my goal is to **implement them locally using hardware logic** with minimal processing power.
 
+To add to its uniqueness, the **entire watch will be made using stacked PCBs**, designed with multiple colours and selective finishes, giving it a true electronics-nerd feel.
 
-# To get started:
+---
 
-* Project_OAK_MAIN_BRD_V0.1 embeds all the major interfaces required to execute basic watch functionality.
-* The Main Board contains **ATMega328PB** (MCU) and **RV-8263-C7** (RTC) as major component. The board also contains 36 LEDs (12 for hours and 24 for Minute representation), 3 tactile switches, and 3V supply monitoring.
-* The MCU used is from the ATmega family, hence the MCU can be programmed through Arduino IDE with some modifications. Refer to this GitHub repo on how to burn Bootloader and how to flash codes through Arduino IDE. Link: https://github.com/MCUdude/MiniCore
-* Programming the Main Board needs additional Arduino UNO/MINI/NANO/MEGA (configured as ISP) which is connected to MAIN_BRD through ICSP.
-* ICSP pins are exposed as Test Points on the bottom side. Wire up male headers when programming the board.
-* MAIN_BRD features a two-way supply to power the circuit. **Note: Make sure that only one option is enalbed at a time to power the Main Board.**
-  * One way is through a 3V coin cell
-  * Another way is through the EXT_3V3_IN pin present in the ICSP header (TP1) during programming/debugging. To power the board through ICSP, R1 should be mounted. By default, R1 made **DNI**
-* When programming the MAIN_BRD, change the ARDUINO IDE settings as shown in the below image
-  ![image](https://github.com/user-attachments/assets/9ddba8e6-f67e-4086-b126-84e10bf74e95)
-* Since the Main Board is programmed through another Arduino (connected through ICSP), codes from ARDUINO IDE are uploaded by clicking the **Upload Using Programmer (Ctrl+Shift+U)** option. Please don't use the normal **upload** option. Otherwise, the code will be uploaded to the programmer Arduino instead of the Main Board.
+## ⏳ Current Status
 
-* These data should be sufficient for basic code execution on the Main Board. This repo also contains datasheets, schematics, pin-configuration sheet, BOM and other related docs used in designing Project-OAK_MAIN_BRD_V0.1 Make use of it.
+The **initial version** of Project_OAK (V0.1 / V0.2) will be a simple digital watch featuring a **time display** using dual-tone LEDs.
 
-* New ideas and features are always welcome!
+> Future versions may include:
+> - GMT & Minute Repeater functionality
+> - Interactive sensors (Light, IMU, Temp, Step tracking, Buzzer, etc.)
+> - Position tracking using GPS, LoRa, etc. (ambitious goal)
+> - Low-power MCUs for long-life operation.
 
-**Happy Designing!**
+This initial version is basically powered by a **3V coin cell**, with future variants possibly integrating a rechargeable battery (maybe also a solar panel?).
+
+---
+
+## 💎 Initial Mockup
+
+![Initial Mockup](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/CAD_Design/Mockup_Images/Project_OAK_Full_ASSY.jpeg)
+
+![Complete Assembly](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/CAD_Design/Mockup_Images/Project_OAK_Full_ASSY_1.jpeg)
+
+![Cross-section View](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/CAD_Design/Mockup_Images/Project_OAK_ASSY_Cross-section.jpeg)
+
+![Exploded View](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/CAD_Design/Mockup_Images/Project_OAK_Exploaded_view.jpeg)
+
+> *(These are the outputs from V0.1 variant. Design changes are expected in V0.2)*
+
+---
+
+## 🔧 Prototyping
+
+📌 **`Project_OAK_MAIN_BRD_V0.1` is an engineering sample. The design is not mature enough for mass production.**
+
+The primary goal of this variant is to **test all available interfaces, validate MCU performance, identify design flaws, and iterate for improvements**.
+
+Consider this board a creative playground, push its limits. Explore unique feature additions for the upcoming revision.
+
+---
+
+## ⚙️ Getting Started
+
+The main board, `Project_OAK_MAIN_BRD_V0.1`, includes the following:
+
+### 🔩 Key Components
+- **Microcontroller (MCU)**: `ATMega328PB`
+- **Real-Time Clock (RTC)**: `RV-8263-C7`
+- **LEDs**: 36 total (12 for hour, 24 for minute)
+- **Buttons**: 3 tactile switches
+- **Power Monitor**: 3V supply sensing
+
+---
+
+### 🔌 Programming the Board
+
+The board can be programmed using the **Arduino IDE** via the ISP function. 
+
+#### 📝 Requirements:
+- Arduino UNO/MINI/NANO/MEGA as ISP programmer
+- ICSP connection to the Main Board (test points on the bottom side)
+
+#### 💡 ICSP Programming Notes:
+- ICSP pins are exposed via **Test Points** arranged in 2.4mm pitch 2x3 connector style
+- Either mount **male headers** or directly solder wires for programming
+- Board supports **2 power options**:
+  - `3V Coin Cell (default)`
+  - `EXT_3V3_IN` via ICSP (requires mounting resistor R1, which is **DNI by default**)
+
+---
+
+### ⚡ Arduino IDE Settings
+
+> - Refer to this GitHub repo on how to burn Bootloader and how to flash code through Arduino IDE [MiniCore](https://github.com/MCUdude/MiniCore)
+> - When programming the MAIN_BRD, update the ARDUINO IDE settings as shown below.
+
+![Arduino IDE settings](https://github.com/0101shift/Project_OAK/blob/13e2feacb9ec941adc7ed6d2bb95fb73d0bc1807/Reference_docs/Project_OAK_Arduino_Programming_Settings.png)
+
+#### ❤️‍🔥 Let me know what you think of this project, I'd love to hear your thoughts!
+
+### ✨ Happy Designing!
+
+---

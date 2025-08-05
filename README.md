@@ -77,8 +77,8 @@ Consider this board a creative playground, push its limits. Explore unique featu
 The main board, `Project_OAK_MAIN_BRD_V0.1`, includes the following:
 
 ### 🔩 Key Components
-- **Microcontroller (MCU)**: [ATMega328PB](Datasheet/ATMEGA328PB.pdf)
-- **Real-Time Clock (RTC)**: [RV-8263-C7](Datasheet/RV-8263-C7.pdf)
+- **Microcontroller (MCU)**: [ATMega328PB](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/40001906C.pdf)
+- **Real-Time Clock (RTC)**: [RV-8263-C7](https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-8263-C7_App-Manual.pdf)
 - **LEDs**: 36 total (12 for hour, 24 for minute)
 - **Buttons**: 3 tactile switches
 - **Power Monitor**: 3V supply sensing

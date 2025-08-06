@@ -43,7 +43,7 @@ To make the push-button functional:
 
 ## ✔️ V0.1 Rework Instructions
 
-![Project_OAK_MAIN_BRD_V0.1_Rework](V0.1/Project_OAK_MAIN_BRD_V0.1_Rework_Instruction.png)
+![Project_OAK_MAIN_BRD_V0.1_Rework](https://github.com/0101shift/Project_OAK/blob/f5fa7a730082febc1837f688a552a8a41a81e351/Reworks/V0.1/Project_OAK_MAIN_BRD_V0.1_Rework_Instruction.png)
 
 ---
 

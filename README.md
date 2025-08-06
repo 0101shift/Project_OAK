@@ -53,7 +53,7 @@ To add to its uniqueness, the **entire watch will be made using stacked PCBs**, 
 
 ### V0.1 (Engineering Sample - Field test WIP)
 - Changed RTC from RX8130CE to RV-8263-C7 due to component unavailability
-- Performed several rework on the main board to resolve design issues. Rework instructions are documented in the [Project_OAK_MAIN_BRD_V0.1_Rework](Reworks/Project_OAK_MAIN_BRD_V0.1_Rework.md).
+- Performed several rework on the main board to resolve design issues. Rework instructions are documented in the [Project_OAK_MAIN_BRD_V0.1_Rework](Reworks/V0.1/README.md).
 - Cell voltage monitoring with LED indication is not implemented in V0.1. It will either be upgraded or completely removed in V0.2.
 - With minimal rework, V0.1 functions as expected. Field testing is on going to evaluate circuit behavior.
 

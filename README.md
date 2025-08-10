@@ -10,8 +10,8 @@
 - [Repository Overview](#-repository-overview)
 - [Project Overview](#-project-overview)
 - [Version History](#-version-history)
-- [Current Status](#-current-status)
-- [Project OAK Layers](#-project-oak-layers)
+- [Progress](#-progress)
+- [OAK Layers](#-oak-layers)
 - [Prototyping](#-prototyping)
 - [Getting Started](#-getting-started)
   - [Programming the Board](#-programming-the-board)
@@ -51,12 +51,21 @@ To add to its uniqueness, the **entire watch will be made using stacked PCBs**, 
 
 ## 🚩 Version History
 
+### V0.2 (Engineering Sample2 - Planned)
+- Button circuit connectivity update
+- Remove the transistor configuration and connect the LED matrix directly to the MCU pins
+- Remove battery monitoring circuit (to reduce power consumption)
+- Push button components to be moved towards the inner circle to avoid mechanical collision
+- Remove Top Silk graphics
+- Increase the main board dimension in the Y-direction, both sides equal to the STARP V0 board dimension
+- Replace 0E with net-tie to LED matrix section
+- DNP UART resistors
+  
 ### V0.1 (Engineering Sample - Field test WIP)
-- Changed RTC from RX8130CE to RV-8263-C7 due to component unavailability
-- Performed several rework on the main board to resolve design issues. Rework instructions are documented in the [Project_OAK_MAIN_BRD_V0.1_Rework](Reworks/V0.1/README.md).
-- Cell voltage monitoring with LED indication is not implemented in V0.1. It will either be upgraded or completely removed in V0.2.
-- With minimal rework, V0.1 functions as expected. Field testing is on going to evaluate circuit behavior.
-
+- Changed RTC from RX8130CE to RV-8263-C7 due to component unavailability.
+- Performed several reworks on the main board to resolve design issues. Rework instructions are documented in the [Project_OAK_MAIN_BRD_V0.1_Rework](Reworks/V0.1/README.md). 
+- ~~Cell voltage monitoring with LED indication is not implemented in V0.1.~~ (It will be completely removed in V0.2)
+- With minimal rework, V0.1 functions as expected. Field testing is ongoing to evaluate circuit behaviour.
 
 ### V0 (Initial Design - Unreleased)
 - Initial board design consists of ATmega328PB MCU, RX8130CE RTC, 36 LEDs (12H + 24M) & 2032 coin cell holder  
@@ -64,21 +73,21 @@ To add to its uniqueness, the **entire watch will be made using stacked PCBs**, 
 
 ---
 
-## ⏳ Current Status
+## ⏳ Progress
 
 The **initial version** of Project_OAK (V0.1) is just a simple digital watch featuring a **time display** using dual-tone LEDs.
 
 > Future versions may include:
 > - GMT & Minute Repeater functionality
 > - Interactive sensors (Light, IMU, Temp, Step tracking, Buzzer, etc.)
-> - Position tracking using GPS, LoRa, etc. (ambitious goal)
+> - Position tracking using GPS, LoRa, etc. (ambitious!)
 > - Low-power MCUs for long-life operation.
-> - Explore the possibility of using a rechargable battery.
+> - Explore the possibility of using a rechargeable battery.
 > - Solar panel integration for battery charging.
 
 ---
 
-## 💎 Project OAK Layers
+## 💎 OAK Layers
 
 ![Initial Mockup](CAD_Design/Mockup_Images/Project_OAK_Full_ASSY.jpeg)
 
@@ -94,7 +103,7 @@ The **initial version** of Project_OAK (V0.1) is just a simple digital watch fea
 
 ## 🔧 Prototyping
 
-📌 **[Project_OAK_MAIN_BRD_V0.1](Design/LLD_Design/V0.1/Project_OAK_MAIN_BRD_V0.1_RTC_Change/Project_OAK_MAIN_BRD_V0.1.pdf) is an engineering sample. The design is not mature enough for mass production.**
+📌 **[Project_OAK_MAIN_BRD_V0.1 / V0.2](Design/LLD_Design/V0.1/Project_OAK_MAIN_BRD_V0.1_RTC_Change/Project_OAK_MAIN_BRD_V0.1.pdf) is an engineering sample. The design is not mature enough for mass production.**
 
 The primary goal of this variant is to **test all available interfaces, validate MCU performance, identify design flaws, and iterate for improvements**.
 

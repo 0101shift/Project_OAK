@@ -5,20 +5,6 @@
 
 ---
 
-## 📚 Table of Contents
-
-- [Repository Overview](#-repository-overview)
-- [Project Overview](#-project-overview)
-- [Version History](#-version-history)
-- [Progress](#-progress)
-- [OAK Layers](#-oak-layers)
-- [Prototyping](#-prototyping)
-- [Getting Started](#-getting-started)
-  - [Programming the Board](#-programming-the-board)
-  - [Arduino IDE Settings](#-arduino-ide-settings)
-
----
-
 ## 📁 Repository Overview
 
 This repository contains all files related to **Project_OAK**, including:
@@ -61,11 +47,11 @@ To add to its uniqueness, the **entire watch will be made using stacked PCBs**, 
 - Replace 0E with net-tie to LED matrix section
 - DNP UART resistors
   
-### V0.1 (Engineering Sample - Field test WIP)
+### V0.1 (Engineering Sample - WIP)
 - Changed RTC from RX8130CE to RV-8263-C7 due to component unavailability.
-- Performed several reworks on the main board to resolve design issues. Rework instructions are documented in the [Project_OAK_MAIN_BRD_V0.1_Rework](Reworks/V0.1/README.md). 
-- ~~Cell voltage monitoring with LED indication is not implemented in V0.1.~~ (It will be completely removed in V0.2)
-- With minimal rework, V0.1 functions as expected. Field testing is ongoing to evaluate circuit behaviour.
+- Performed rework on the main board to resolve design issues. Rework documentation: [Project_OAK_MAIN_BRD_V0.1_Rework](Reworks/V0.1/README.md). 
+- ~~Cell voltage monitoring with LED indication is not implemented in V0.1.~~ (Planned to remove in V0.2)
+- Field test in progress to evaluate circuit behaviour.
 
 ### V0 (Initial Design - Unreleased)
 - Initial board design consists of ATmega328PB MCU, RX8130CE RTC, 36 LEDs (12H + 24M) & 2032 coin cell holder  
@@ -73,7 +59,7 @@ To add to its uniqueness, the **entire watch will be made using stacked PCBs**, 
 
 ---
 
-## ⏳ Progress
+## ⏳ Down the line
 
 The **initial version** of Project_OAK (V0.1) is just a simple digital watch featuring a **time display** using dual-tone LEDs.
 
@@ -87,7 +73,7 @@ The **initial version** of Project_OAK (V0.1) is just a simple digital watch fea
 
 ---
 
-## 💎 OAK Layers
+## 💎 Mechanical Integration
 
 ![Initial Mockup](CAD_Design/Mockup_Images/Project_OAK_Full_ASSY.jpeg)
 
@@ -103,9 +89,9 @@ The **initial version** of Project_OAK (V0.1) is just a simple digital watch fea
 
 ## 🔧 Prototyping
 
-📌 **[Project_OAK_MAIN_BRD_V0.1 / V0.2](Design/LLD_Design/V0.1/Project_OAK_MAIN_BRD_V0.1_RTC_Change/Project_OAK_MAIN_BRD_V0.1.pdf) is an engineering sample. The design is not mature enough for mass production.**
+📌 **[Project_OAK_MAIN_BRD_V0.1 / V0.2](Design/LLD_Design/V0.1/Project_OAK_MAIN_BRD_V0.1_RTC_Change/Project_OAK_MAIN_BRD_V0.1.pdf) is an engineering sample.**
 
-The primary goal of this variant is to **test all available interfaces, validate MCU performance, identify design flaws, and iterate for improvements**.
+The primary goal of these variants is to **test all available interfaces, validate MCU performance, identify design flaws, and iterate for improvements**.
 
 Consider this board a creative playground, push its limits and explore unique feature additions for the upcoming revision.
 

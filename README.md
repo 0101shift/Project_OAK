@@ -1,20 +1,21 @@
 # ⌚️ Project OAK (Open Art Work)
 
-![Project OAK](CAD_Design/Mockup_Images/Project_OAK_Front.jpeg)
+![Project OAK](CAD_Design/Mockup_Images/Project_OAK_Front.jpg)
 > *An approach to mimic analogue watch complications in a digital timepiece. One LED at a time.*
 
 ---
 
 ## 📁 Repository Overview
 
-This repository contains all files related to **Project_OAK**, including:
+This repository contains all files related to **Project OAK**, including:
+
 - Design (DSN) files
 - Datasheets
 - Pin configuration sheet
 - BOM (Bill of Materials)
 - Source code and libraries
 
-📎 **Project OAK SCH and DSN files can be viewed on [CADLAB.io](https://cadlab.io/project/28412)**
+📎 **Project OAK SCH and DSN files can be viewed on [CADLAB.io](https://cadlab.io/project/28412)** (or) **can be viewed on [Kicanvas.org](https://github.com/0101shift/Project_OAK/tree/main/Design/LLD_Design/V0.1/Project_OAK_MAIN_BRD_V0.1_RTC_Change)**
 
 ---
 
@@ -29,47 +30,49 @@ While building a digitalised analogue-style watch is fairly common, recreating s
 - **[GMT](https://www.longines.com/en-gr/universe/blog/what-is-a-gmt-watch)**: Tracks a second time zone in addition to the local time.
 - **And more** ...
 
-> Although smartwatches offer these functions via software, my goal is to **implement them locally using hardware logic** with minimal processing power.
+> Although current smartwatches offer these functions via complex hardware, my goal is to **implement them using simple hardware** with minimal processing power.
 
-To add to its uniqueness, the **entire watch will be made using stacked PCBs**, designed with multiple colours and selective finishes, giving it a true electronics-nerd feel.
+- To add to its uniqueness, the **entire watch will be constructed using stacked PCBs**, which is aimed to be modular and reconfigurable based on our needs.
+- The watch is designed with multiple colours and solder finishes, giving it a true electronics-nerd feel.
 
 ---
 
-## 🚩 Version History
+## ⛳️ Version History
 
 ### V0.2 (Engineering Sample2 - Planned)
 - Button circuit connectivity update
-- Remove the transistor configuration and connect the LED matrix directly to the MCU pins
-- Remove battery monitoring circuit (to reduce power consumption)
-- Push button components to be moved towards the inner circle to avoid mechanical collision
-- Remove Top Silk graphics
-- Increase the main board dimension in the Y-direction, both sides equal to the STARP V0 board dimension
-- Replace 0E with net-tie to LED matrix section
-- DNP UART resistors
+- Remove transistor configuration from the LED matrix directly. Direct connection is simple.
+- Battery monitoring circuit implementation.
+- Push button components to be moved towards the inner circle to avoid mechanical collision.
+- Top Silk graphics to be removed from main board.
+- Main board & BOT cavity PCB dimension to be increased in Y-direction, to match it equal to the STARP V0 board dimension
+- 0E to be replaced with solder-jumpers in LED matrix section
+- DNPed MCU UART resistors
   
 ### V0.1 (Engineering Sample - WIP)
-- Changed RTC from RX8130CE to RV-8263-C7 due to component unavailability.
-- Performed rework on the main board to resolve design issues. Rework documentation: [Project_OAK_MAIN_BRD_V0.1_Rework](Reworks/V0.1/README.md). 
-- ~~Cell voltage monitoring with LED indication is not implemented in V0.1.~~ (Planned to remove in V0.2)
-- Field test in progress to evaluate circuit behaviour.
+- RTC changed from RX8130CE to RV-8263-C7.
+- Addressed design issues with rework on the main board. Rework is documented in: [Project_OAK_MAIN_BRD_V0.1_Rework](Reworks/V0.1/README.md). 
+- Cell voltage monitoring (along with LED indication) is not implemented in V0.1. Planned for V0.2
+- Final testing in progress.
 
 ### V0 (Initial Design - Unreleased)
 - Initial board design consists of ATmega328PB MCU, RX8130CE RTC, 36 LEDs (12H + 24M) & 2032 coin cell holder  
-- The design was not released for fabrication as the RTC module was out of stock. A different RTC module was used in the final release.
+- The design was not released for fabrication due to change of RTC module.
 
 ---
 
-## ⏳ Down the line
+## 🎯 Down the line
 
-The **initial version** of Project_OAK (V0.1) is just a simple digital watch featuring a **time display** using dual-tone LEDs.
+The **initial version** of Project_OAK (V0.1 / V0.2) is just a simple watch featuring a **time display** using dual-tone LEDs.
 
 > Future versions may include:
 > - GMT & Minute Repeater functionality
 > - Interactive sensors (Light, IMU, Temp, Step tracking, Buzzer, etc.)
+> - Higher density LED matrix for complex visuals.
 > - Position tracking using GPS, LoRa, etc. (ambitious!)
-> - Low-power MCUs for long-life operation.
-> - Explore the possibility of using a rechargeable battery.
-> - Solar panel integration for battery charging.
+> - Exploring Low-power MCUs for long-life operation.
+> - Rechargeable battery option.
+> - Solar panel integration energy harvesting.
 
 ---
 
@@ -77,11 +80,11 @@ The **initial version** of Project_OAK (V0.1) is just a simple digital watch fea
 
 ![Initial Mockup](CAD_Design/Mockup_Images/Project_OAK_Full_ASSY.jpeg)
 
-![Complete Assembly](CAD_Design/Mockup_Images/Project_OAK_Full_ASSY_1.jpeg)
-
 ![Cross-section View](CAD_Design/Mockup_Images/Project_OAK_ASSY_Cross-section.jpeg)
 
-![Exploded View](CAD_Design/Mockup_Images/Project_OAK_Exploded_view.jpeg)
+![Exploded View](CAD_Design/Mockup_Images/Project_OAK_Exploded_view_1.jpg)
+
+![Exploded View](CAD_Design/Mockup_Images/Project_OAK_Drawing.jpg)
 
 > *(These are the outputs from V0.1 variant. Design changes are expected in V0.2)*
 
@@ -118,12 +121,12 @@ The board can be programmed using the **Arduino IDE** via the ISP function.
 
 ### ⚡ Arduino IDE Settings
 
-> - Refer to this GitHub repo on how to burn Bootloader and how to flash code through Arduino IDE [MiniCore](https://github.com/MCUdude/MiniCore)
+> - Refer to this GitHub repo on how to burn the Bootloader and how to flash code through Arduino IDE [MiniCore](https://github.com/MCUdude/MiniCore)
 > - When programming the MAIN_BRD, update the ARDUINO IDE settings as shown below.
 
 ![Arduino IDE settings](Reference_docs/Project_OAK_Arduino_Programming_Settings.png)
 
-#### ❤️‍🔥 Let me know what you think of this project, I'd love to hear your thoughts!
+#### ❤️‍🔥 Let me know what you think of this project. I'd love to hear your thoughts!
 
 ### ✨ Happy Designing!
 

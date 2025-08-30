@@ -16,6 +16,10 @@
 - Cell voltage monitoring (along with LED indication) is not implemented in V0.1. Planned for V0.2
 - Final testing in progress.
 
+ <div style="background-color:#ffe6e6; padding:10px; border-radius:6px;">
+⚠️ <b>Caution:</b> Other layers, except the Main Board, are reused from V0
+</div>
+
 ## 🚫 V0 (Initial Design - Unreleased)
 - Initial board design consists of ATmega328PB MCU, RX8130CE RTC, 36 LEDs (12H + 24M) & 2032 coin cell holder  
 - The design was not released for fabrication due to a change in the RTC module.

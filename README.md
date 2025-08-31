@@ -36,6 +36,14 @@ While building a digitalised analogue-style watch is fairly common, recreating s
 
 ---
 
+## 🎲 How it Works
+
+> "V0.1 / V0.2" come with a simple design to set and view the time. Here’s an infographic that shows the process
+
+![V0.1 working](CAD_Design/Mockup_Images/Project_OAK_V0.1_Working_Exp.png)
+
+---
+
 ## 🔧 Initial Prototype
 
 📌 **[Project_OAK_MAIN_BRD_V0.1 / V0.2](Design/LLD_Design/V0.1/Project_OAK_MAIN_BRD_V0.1_RTC_Change/Project_OAK_MAIN_BRD_V0.1.pdf) is an "engineering sample".**
@@ -46,7 +54,7 @@ Consider this board a creative playground, push its limits and explore unique fe
 
 ---
 
-## 🎲 Down the line
+## 🚀 Down the line
 
 Though the **initial version** of Project_OAK (V0.1 / V0.2) is just a simple watch featuring a **time display** using dual-tone LEDs,
 

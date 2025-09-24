@@ -247,10 +247,8 @@ F 3 "~" H 4300 6500 50  0001 C CNN
 	1    4100 6500
 	1    0    0    -1  
 $EndComp
-Text Label 6700 6800 2    50   ~ 0
+Text Label 6550 6800 2    50   ~ 0
 RTC_INTO
-Text Notes 4900 5550 0    100  ~ 20
-RTC SECTION
 Text Notes 1100 4650 0    100  ~ 20
 PUSH BTN SECTION
 Text Notes 9100 850  0    100  ~ 20
@@ -541,7 +539,7 @@ F 3 "~" H 8750 3650 50  0001 C CNN
 	1    8550 3650
 	0    1    1    0   
 $EndComp
-Text Label 6700 6600 2    50   ~ 0
+Text Label 6550 6600 2    50   ~ 0
 RTC_CLKO
 Wire Wire Line
 	7200 1800 6950 1800
@@ -1543,7 +1541,7 @@ C5_T
 Text Label 10650 5900 2    50   ~ 0
 C6_T
 Wire Wire Line
-	6750 6600 6150 6600
+	6650 6600 6150 6600
 Wire Notes Line
 	13250 2700 13250 3900
 Text Notes 13350 3550 1    50   ~ 0
@@ -2040,7 +2038,7 @@ U 1 1 68D2CA0D
 P 9850 1750
 F 0 "BT1" V 9700 1550 50  0000 L CNN
 F 1 "BC-2018-TR" V 10000 1200 50  0000 L CNN
-F 2 "BAT_BC-2018-TR" H 9850 1750 50  0001 L BNN
+F 2 "Battery:BAT_BC-2018-TR" H 9850 1750 50  0001 L BNN
 F 3 "" H 9850 1750 50  0001 L BNN
 F 4 "MPD (Memory Protection Devices)" H 9850 1750 50  0001 L BNN "MF"
 F 5 "2.84mm" H 9850 1750 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
@@ -2066,12 +2064,12 @@ Wire Wire Line
 	10100 2150 10100 2100
 Connection ~ 10100 2100
 $Comp
-L LIS2DW12TR:LIS2DW12TR U?
+L LIS2DW12TR:LIS2DW12TR U3
 U 1 1 68D2D363
 P 2550 1950
-F 0 "U?" H 2000 2500 50  0000 C CNN
+F 0 "U3" H 2000 2500 50  0000 C CNN
 F 1 "LIS2DW12TR" H 2950 1300 50  0000 C CNN
-F 2 "LGA12R50P4X4_200X200X70" H 2550 1950 50  0001 L BNN
+F 2 "Sensor:LIS2DW12TR" H 2550 1950 50  0001 L BNN
 F 3 "" H 2550 1950 50  0001 L BNN
 F 4 "STMicroelectronics" H 2550 1950 50  0001 L BNN "MF"
 F 5 "\\n                        \\n                            Accelerometer X, Y, Z Axis ±2g, 4g, 8g, 16g 400Hz 12-LGA (2x2)\\n                        \\n" H 2550 1950 50  0001 L BNN "Description"
@@ -2098,16 +2096,16 @@ Wire Wire Line
 Wire Wire Line
 	9250 1400 9400 1400
 Wire Wire Line
-	6750 6900 6750 6600
+	6650 6900 6650 6600
 $Comp
 L Connector:TestPoint TP11
 U 1 1 665E4AE1
-P 6750 6900
-F 0 "TP11" V 6750 7100 50  0000 L CNN
-F 1 "TestPoint" H 6808 6927 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6950 6900 50  0001 C CNN
-F 3 "~" H 6950 6900 50  0001 C CNN
-	1    6750 6900
+P 6650 6900
+F 0 "TP11" V 6650 7100 50  0000 L CNN
+F 1 "TestPoint" H 6708 6927 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6850 6900 50  0001 C CNN
+F 3 "~" H 6850 6900 50  0001 C CNN
+	1    6650 6900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -2137,10 +2135,10 @@ F 3 "~" H 6650 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR05
 U 1 1 68D3E761
 P 3450 2750
-F 0 "#PWR?" H 3450 2500 50  0001 C CNN
+F 0 "#PWR05" H 3450 2500 50  0001 C CNN
 F 1 "GND" H 3455 2577 50  0000 C CNN
 F 2 "" H 3450 2750 50  0001 C CNN
 F 3 "" H 3450 2750 50  0001 C CNN
@@ -2161,10 +2159,10 @@ ACC_INT1
 Text Label 3750 1950 2    50   ~ 0
 ACC_INT2
 $Comp
-L power:+3V0 #PWR?
+L power:+3V0 #PWR09
 U 1 1 68E86F57
 P 4400 1450
-F 0 "#PWR?" H 4400 1300 50  0001 C CNN
+F 0 "#PWR09" H 4400 1300 50  0001 C CNN
 F 1 "+3V0" H 4415 1623 50  0000 C CNN
 F 2 "" H 4400 1450 50  0001 C CNN
 F 3 "" H 4400 1450 50  0001 C CNN
@@ -2172,10 +2170,10 @@ F 3 "" H 4400 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C5
 U 1 1 68EAAFD1
 P 3900 1850
-F 0 "C?" H 3900 1950 50  0000 L CNN
+F 0 "C5" H 3900 1950 50  0000 L CNN
 F 1 "0.1u" H 3900 1750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 3938 1700 50  0001 C CNN
 F 3 "~" H 3900 1850 50  0001 C CNN
@@ -2185,10 +2183,10 @@ $EndComp
 Wire Wire Line
 	3900 2000 3900 2050
 $Comp
-L Device:C C?
+L Device:C C10
 U 1 1 68ECD6BD
 P 4150 1850
-F 0 "C?" H 4150 1950 50  0000 L CNN
+F 0 "C10" H 4150 1950 50  0000 L CNN
 F 1 "0.1u" H 4150 1750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4188 1700 50  0001 C CNN
 F 3 "~" H 4150 1850 50  0001 C CNN
@@ -2198,10 +2196,10 @@ $EndComp
 Wire Wire Line
 	4150 2000 4150 2050
 $Comp
-L Device:C C?
+L Device:C C11
 U 1 1 68EEF466
 P 4400 1850
-F 0 "C?" H 4400 1950 50  0000 L CNN
+F 0 "C11" H 4400 1950 50  0000 L CNN
 F 1 "10u" H 4400 1750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4438 1700 50  0001 C CNN
 F 3 "~" H 4400 1850 50  0001 C CNN
@@ -2209,10 +2207,10 @@ F 3 "~" H 4400 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR011
 U 1 1 68EEF470
 P 4400 2100
-F 0 "#PWR?" H 4400 1850 50  0001 C CNN
+F 0 "#PWR011" H 4400 1850 50  0001 C CNN
 F 1 "GND" H 4405 1927 50  0000 C CNN
 F 2 "" H 4400 2100 50  0001 C CNN
 F 3 "" H 4400 2100 50  0001 C CNN
@@ -2228,17 +2226,6 @@ Wire Wire Line
 Wire Wire Line
 	4400 1550 4400 1700
 Connection ~ 4150 1550
-$Comp
-L Connector:TestPoint TP?
-U 1 1 68FC99E1
-P 3150 3200
-F 0 "TP?" V 3150 3400 50  0000 L CNN
-F 1 "TestPoint" H 3208 3227 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3350 3200 50  0001 C CNN
-F 3 "~" H 3350 3200 50  0001 C CNN
-	1    3150 3200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4150 2050 4400 2050
 Connection ~ 4400 2050
@@ -2267,23 +2254,23 @@ Wire Wire Line
 Wire Wire Line
 	1300 2950 1300 2600
 $Comp
-L Jumper:SolderJumper_2_Bridged JP?
+L Jumper:SolderJumper_2_Bridged JP4
 U 1 1 693258B0
 P 1300 2450
-F 0 "JP?" H 1100 2500 50  0000 C CNN
+F 0 "JP4" H 1100 2500 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 1300 2564 50  0001 C CNN
-F 2 "" H 1300 2450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1300 2450 50  0001 C CNN
 F 3 "~" H 1300 2450 50  0001 C CNN
 	1    1300 2450
 	0    1    -1   0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP?
+L Jumper:SolderJumper_2_Bridged JP3
 U 1 1 6939B47C
 P 1300 1650
-F 0 "JP?" H 1100 1700 50  0000 C CNN
+F 0 "JP3" H 1100 1700 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 1300 1764 50  0001 C CNN
-F 2 "" H 1300 1650 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1300 1650 50  0001 C CNN
 F 3 "~" H 1300 1650 50  0001 C CNN
 	1    1300 1650
 	0    1    1    0   
@@ -2293,10 +2280,10 @@ A_SDA
 Text Label 1500 1850 0    50   ~ 0
 A_SCL
 $Comp
-L power:GND #PWR?
+L power:GND #PWR03
 U 1 1 69461174
 P 1050 2750
-F 0 "#PWR?" H 1050 2500 50  0001 C CNN
+F 0 "#PWR03" H 1050 2500 50  0001 C CNN
 F 1 "GND" H 1055 2577 50  0000 C CNN
 F 2 "" H 1050 2750 50  0001 C CNN
 F 3 "" H 1050 2750 50  0001 C CNN
@@ -2310,10 +2297,10 @@ Wire Wire Line
 Wire Wire Line
 	1050 2150 1750 2150
 $Comp
-L power:+3V0 #PWR?
+L power:+3V0 #PWR01
 U 1 1 695C981D
 P 1050 1350
-F 0 "#PWR?" H 1050 1200 50  0001 C CNN
+F 0 "#PWR01" H 1050 1200 50  0001 C CNN
 F 1 "+3V0" H 1065 1523 50  0000 C CNN
 F 2 "" H 1050 1350 50  0001 C CNN
 F 3 "" H 1050 1350 50  0001 C CNN
@@ -2521,23 +2508,12 @@ $EndComp
 Text Notes 7200 5550 0    100  ~ 20
 RST & BATT MON SECTION
 $Comp
-L Connector:TestPoint TP?
-U 1 1 6901336B
-P 3150 3350
-F 0 "TP?" V 3150 3550 50  0000 L CNN
-F 1 "TestPoint" H 3208 3377 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3350 3350 50  0001 C CNN
-F 3 "~" H 3350 3350 50  0001 C CNN
-	1    3150 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP?
+L Jumper:SolderJumper_2_Bridged JP5
 U 1 1 6A1A2DD4
 P 2500 3200
-F 0 "JP?" H 2300 3250 50  0000 C CNN
+F 0 "JP5" H 2300 3250 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 2500 3314 50  0001 C CNN
-F 2 "" H 2500 3200 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2500 3200 50  0001 C CNN
 F 3 "~" H 2500 3200 50  0001 C CNN
 	1    2500 3200
 	1    0    0    -1  
@@ -2551,12 +2527,12 @@ ACC_INT1
 Text Label 1750 3200 0    50   ~ 0
 LGT_ON_BTN
 $Comp
-L Jumper:SolderJumper_2_Bridged JP?
+L Jumper:SolderJumper_2_Bridged JP6
 U 1 1 6A3743CA
 P 2500 3350
-F 0 "JP?" H 2300 3400 50  0000 C CNN
+F 0 "JP6" H 2300 3400 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 2500 3464 50  0001 C CNN
-F 2 "" H 2500 3350 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2500 3350 50  0001 C CNN
 F 3 "~" H 2500 3350 50  0001 C CNN
 	1    2500 3350
 	1    0    0    -1  
@@ -2588,56 +2564,56 @@ Wire Wire Line
 Text Notes 2050 2850 0    50   ~ 0
 Slave Address: 31h (Read)\nSlave Address: 30h (write)
 $Comp
-L Jumper:SolderJumper_2_Bridged JP?
+L Jumper:SolderJumper_2_Bridged JP2
 U 1 1 6A881C6E
 P 1050 2450
-F 0 "JP?" H 850 2500 50  0000 C CNN
+F 0 "JP2" H 850 2500 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 1050 2564 50  0001 C CNN
-F 2 "" H 1050 2450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1050 2450 50  0001 C CNN
 F 3 "~" H 1050 2450 50  0001 C CNN
 	1    1050 2450
 	0    1    -1   0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 6A8D51C0
 P 1050 1650
-F 0 "JP?" H 850 1700 50  0000 C CNN
+F 0 "JP1" H 850 1700 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 1050 1764 50  0001 C CNN
-F 2 "" H 1050 1650 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1050 1650 50  0001 C CNN
 F 3 "~" H 1050 1650 50  0001 C CNN
 	1    1050 1650
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP7
 U 1 1 6A97A748
 P 8050 3650
-F 0 "JP?" H 7850 3700 50  0000 C CNN
+F 0 "JP7" H 7850 3700 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 8050 3764 50  0001 C CNN
-F 2 "" H 8050 3650 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8050 3650 50  0001 C CNN
 F 3 "~" H 8050 3650 50  0001 C CNN
 	1    8050 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP8
 U 1 1 6A9CEA05
 P 8050 3750
-F 0 "JP?" H 7850 3800 50  0000 C CNN
+F 0 "JP8" H 7850 3800 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 8050 3864 50  0001 C CNN
-F 2 "" H 8050 3750 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8050 3750 50  0001 C CNN
 F 3 "~" H 8050 3750 50  0001 C CNN
 	1    8050 3750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Net-Tie_2 NT?
+L Device:Net-Tie_2 NT2
 U 1 1 6A9F87DC
 P 8050 3000
-F 0 "NT?" H 8050 3050 50  0000 C CNN
+F 0 "NT2" H 8050 3050 50  0000 C CNN
 F 1 "Net-Tie_2" H 8050 3090 50  0001 C CNN
-F 2 "" H 8050 3000 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 3000 50  0001 C CNN
 F 3 "~" H 8050 3000 50  0001 C CNN
 	1    8050 3000
 	1    0    0    -1  
@@ -2647,71 +2623,73 @@ Wire Wire Line
 Wire Wire Line
 	6950 3000 7950 3000
 $Comp
-L Device:Net-Tie_2 NT?
+L Device:Net-Tie_2 NT3
 U 1 1 6AAA1105
 P 8050 3400
-F 0 "NT?" H 8050 3450 50  0000 C CNN
+F 0 "NT3" H 8050 3450 50  0000 C CNN
 F 1 "Net-Tie_2" H 8050 3490 50  0001 C CNN
-F 2 "" H 8050 3400 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 3400 50  0001 C CNN
 F 3 "~" H 8050 3400 50  0001 C CNN
 	1    8050 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Net-Tie_2 NT?
+L Device:Net-Tie_2 NT4
 U 1 1 6AAC9C1E
 P 8050 3500
-F 0 "NT?" H 8050 3550 50  0000 C CNN
+F 0 "NT4" H 8050 3550 50  0000 C CNN
 F 1 "Net-Tie_2" H 8050 3590 50  0001 C CNN
-F 2 "" H 8050 3500 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 3500 50  0001 C CNN
 F 3 "~" H 8050 3500 50  0001 C CNN
 	1    8050 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Net-Tie_2 NT?
+L Device:Net-Tie_2 NT5
 U 1 1 6AB4359A
 P 8050 4100
-F 0 "NT?" H 8050 4150 50  0000 C CNN
+F 0 "NT5" H 8050 4150 50  0000 C CNN
 F 1 "Net-Tie_2" H 8050 4190 50  0001 C CNN
-F 2 "" H 8050 4100 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 4100 50  0001 C CNN
 F 3 "~" H 8050 4100 50  0001 C CNN
 	1    8050 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Net-Tie_2 NT?
+L Device:Net-Tie_2 NT6
 U 1 1 6AB435A4
 P 8050 4200
-F 0 "NT?" H 8050 4250 50  0000 C CNN
+F 0 "NT6" H 8050 4250 50  0000 C CNN
 F 1 "Net-Tie_2" H 8050 4290 50  0001 C CNN
-F 2 "" H 8050 4200 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 4200 50  0001 C CNN
 F 3 "~" H 8050 4200 50  0001 C CNN
 	1    8050 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Net-Tie_2 NT?
+L Device:Net-Tie_2 NT1
 U 1 1 6AC10768
 P 5400 3800
-F 0 "NT?" H 5400 3850 50  0000 C CNN
+F 0 "NT1" H 5400 3850 50  0000 C CNN
 F 1 "Net-Tie_2" H 5400 3890 50  0001 C CNN
-F 2 "" H 5400 3800 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5400 3800 50  0001 C CNN
 F 3 "~" H 5400 3800 50  0001 C CNN
 	1    5400 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP9
 U 1 1 6ACB5424
 P 9550 1400
-F 0 "JP?" H 9350 1450 50  0000 C CNN
+F 0 "JP9" H 9350 1450 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 9550 1514 50  0001 C CNN
-F 2 "" H 9550 1400 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9550 1400 50  0001 C CNN
 F 3 "~" H 9550 1400 50  0001 C CNN
 	1    9550 1400
 	1    0    0    -1  
 $EndComp
 Text Notes 9500 4900 1    100  ~ 20
 need to confirm
+Text Notes 4900 5550 0    100  ~ 20
+RTC SECTION
 $EndSCHEMATC

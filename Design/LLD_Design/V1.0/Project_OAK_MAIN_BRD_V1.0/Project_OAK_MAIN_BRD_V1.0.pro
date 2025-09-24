@@ -1,4 +1,4 @@
-update=07/22/24 23:18:31
+update=09/24/25 08:14:00
 version=1
 last_client=kicad
 [general]
@@ -25,9 +25,9 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Project_OAK_MAIN_BRD_V0.net
+LastNetListRead=Project_OAK_MAIN_BRD_V1.0.net
 CopperLayerCount=6
-BoardThickness=1.6
+BoardThickness=1
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0

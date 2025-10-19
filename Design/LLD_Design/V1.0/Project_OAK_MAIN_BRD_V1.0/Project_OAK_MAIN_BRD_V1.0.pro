@@ -1,4 +1,4 @@
-update=10/05/25 22:16:31
+update=10/19/25 21:19:26
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Project_OAK_MAIN_BRD_V1.0_dummy.net
+LastNetListRead=Project_OAK_MAIN_BRD_V1.0.net
 CopperLayerCount=4
 BoardThickness=1
 AllowMicroVias=0
@@ -43,8 +43,10 @@ TrackWidth2=0.142
 TrackWidth3=0.2
 ViaDiameter1=0.6
 ViaDrill1=0.4
-ViaDiameter2=0.5
+ViaDiameter2=0.45
 ViaDrill2=0.3
+ViaDiameter3=0.5
+ViaDrill3=0.3
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -253,9 +255,9 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Power
 Clearance=0.2
-TrackWidth=0.25
-ViaDiameter=0.6
-ViaDrill=0.4
+TrackWidth=0.2
+ViaDiameter=0.45
+ViaDrill=0.3
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
@@ -264,8 +266,8 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=Signal
 Clearance=0.2
-TrackWidth=0.242
-ViaDiameter=0.5
+TrackWidth=0.1565
+ViaDiameter=0.45
 ViaDrill=0.3
 uViaDiameter=0.3
 uViaDrill=0.1

@@ -5,7 +5,7 @@ $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 1 1
 Title "Project OAK MAIN BRD V1.0"
-Date "2025-09-21"
+Date "2025-10-20"
 Rev "A"
 Comp ""
 Comment1 ""
@@ -236,17 +236,6 @@ Text Label 4200 6800 0    50   ~ 0
 SNS_SCL
 Text Label 4200 6900 0    50   ~ 0
 SNS_SDA
-$Comp
-L Connector:TestPoint TP8
-U 1 1 6661317B
-P 4100 6500
-F 0 "TP8" V 4100 6700 50  0000 L CNN
-F 1 "TestPoint" H 4158 6527 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4300 6500 50  0001 C CNN
-F 3 "~" H 4300 6500 50  0001 C CNN
-	1    4100 6500
-	1    0    0    -1  
-$EndComp
 Text Label 6550 6800 2    50   ~ 0
 RTC_INTO
 Text Notes 1100 4650 0    100  ~ 20
@@ -465,10 +454,6 @@ Text Label 7500 3200 2    50   ~ 0
 SNS_SCL
 Text Label 7500 3300 2    50   ~ 0
 MCU_RSTn
-Text Label 8550 3650 2    50   ~ 0
-DBG_RX
-Text Label 8550 3750 2    50   ~ 0
-DBG_TX
 Wire Wire Line
 	7500 3300 6950 3300
 $Comp
@@ -516,28 +501,6 @@ F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9450 2100 50  0001 C CNN
 F 3 "~" H 9450 2100 50  0001 C CNN
 	1    9250 2100
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP10
-U 1 1 66909C2A
-P 8550 3750
-F 0 "TP10" V 8550 3950 50  0000 L CNN
-F 1 "TestPoint" H 8608 3777 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8750 3750 50  0001 C CNN
-F 3 "~" H 8750 3750 50  0001 C CNN
-	1    8550 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP9
-U 1 1 66909C34
-P 8550 3650
-F 0 "TP9" V 8550 3850 50  0000 L CNN
-F 1 "TestPoint" H 8608 3677 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8750 3650 50  0001 C CNN
-F 3 "~" H 8750 3650 50  0001 C CNN
-	1    8550 3650
-	0    1    1    0   
 $EndComp
 Text Label 6550 6600 2    50   ~ 0
 RTC_CLKO
@@ -615,10 +578,6 @@ Text Label 7200 3600 2    50   ~ 0
 R3_R
 Text Label 5500 3800 0    50   ~ 0
 R6_R
-Wire Wire Line
-	8200 3650 8550 3650
-Wire Wire Line
-	8200 3750 8550 3750
 Text Label 7200 4100 2    50   ~ 0
 R4_R
 Text Label 7200 4200 2    50   ~ 0
@@ -1603,34 +1562,14 @@ Text Label 5000 3800 0    50   ~ 0
 R6
 Text Label 8550 3000 2    50   ~ 0
 R1
-Text Label 8550 3400 2    50   ~ 0
-R2
 Text Label 8550 3500 2    50   ~ 0
+R2
+Text Label 8550 3600 2    50   ~ 0
 R3
-Wire Wire Line
-	8150 3400 8550 3400
 Wire Wire Line
 	8150 3500 8550 3500
 Wire Wire Line
-	7500 3500 7500 3400
-Wire Wire Line
-	7500 3400 7700 3400
-Wire Wire Line
-	6950 3500 7500 3500
-Wire Wire Line
-	7600 3600 7600 3500
-Wire Wire Line
-	7600 3500 7950 3500
-Wire Wire Line
-	6950 3600 7600 3600
-Wire Wire Line
-	7700 3400 7700 3650
-Connection ~ 7700 3400
-Wire Wire Line
-	7700 3400 7950 3400
-Wire Wire Line
-	7600 3600 7600 3750
-Connection ~ 7600 3600
+	8150 3600 8550 3600
 Text Notes 10600 3100 0    50   ~ 0
 12
 Text Notes 11100 3100 0    50   ~ 0
@@ -1703,10 +1642,6 @@ Text Notes 10950 6150 0    50   ~ 0
 57.5
 Text Notes 10550 6150 0    50   ~ 0
 60
-Wire Wire Line
-	7700 3650 7900 3650
-Wire Wire Line
-	7600 3750 7900 3750
 $Comp
 L RV-8263-C7-32.768KHZ-20PPM-TA-QC:RV-8263-C7-32.768KHZ-20PPM-TA-QC U2
 U 1 1 669BFE5F
@@ -1776,8 +1711,6 @@ Wire Wire Line
 	6850 5800 6650 5800
 Text Label 5000 3600 0    50   ~ 0
 PE1
-Wire Wire Line
-	4100 6500 4100 6600
 $Comp
 L Device:R R7
 U 1 1 67272BC9
@@ -1804,7 +1737,6 @@ Wire Wire Line
 	4100 7300 4100 7350
 Wire Wire Line
 	4100 7000 4100 6600
-Connection ~ 4100 6600
 Wire Wire Line
 	1600 5400 1600 5450
 Connection ~ 1600 5450
@@ -2225,34 +2157,6 @@ Wire Wire Line
 Connection ~ 3450 1550
 Wire Wire Line
 	3450 1550 3900 1550
-Wire Wire Line
-	1300 2950 1300 2600
-$Comp
-L Jumper:SolderJumper_2_Bridged JP4
-U 1 1 693258B0
-P 1300 2450
-F 0 "JP4" H 1100 2500 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 1300 2564 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1300 2450 50  0001 C CNN
-F 3 "~" H 1300 2450 50  0001 C CNN
-	1    1300 2450
-	0    1    -1   0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP3
-U 1 1 6939B47C
-P 1300 1650
-F 0 "JP3" H 1100 1700 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 1300 1764 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1300 1650 50  0001 C CNN
-F 3 "~" H 1300 1650 50  0001 C CNN
-	1    1300 1650
-	0    1    1    0   
-$EndComp
-Text Label 1500 2250 0    50   ~ 0
-A_SDA
-Text Label 1500 1850 0    50   ~ 0
-A_SCL
 $Comp
 L power:GND #PWR03
 U 1 1 69461174
@@ -2287,18 +2191,12 @@ Wire Wire Line
 	1050 1800 1050 1950
 Wire Wire Line
 	1050 1950 1750 1950
-Wire Wire Line
-	1300 1150 1300 1500
 Text Label 1300 1150 3    50   ~ 0
 SNS_SCL
 Text Label 1300 2950 1    50   ~ 0
 SNS_SDA
 Wire Wire Line
-	1300 1800 1300 1850
-Wire Wire Line
 	1300 1850 1750 1850
-Wire Wire Line
-	1300 2300 1300 2250
 Wire Wire Line
 	1300 2250 1750 2250
 Wire Wire Line
@@ -2474,7 +2372,7 @@ U 1 1 6A1A2DD4
 P 2500 3200
 F 0 "JP5" H 2300 3250 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 2500 3314 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2500 3200 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_Bridged_Pad1.0x1.5mm_custom" H 2500 3200 50  0001 C CNN
 F 3 "~" H 2500 3200 50  0001 C CNN
 	1    2500 3200
 	1    0    0    -1  
@@ -2513,7 +2411,7 @@ U 1 1 6A881C6E
 P 1050 2450
 F 0 "JP2" H 850 2500 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 1050 2564 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1050 2450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_Bridged_Pad1.0x1.5mm_custom" H 1050 2450 50  0001 C CNN
 F 3 "~" H 1050 2450 50  0001 C CNN
 	1    1050 2450
 	0    1    -1   0   
@@ -2524,32 +2422,10 @@ U 1 1 6A8D51C0
 P 1050 1650
 F 0 "JP1" H 850 1700 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 1050 1764 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1050 1650 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_Open_Pad1.0x1.5mm_custom" H 1050 1650 50  0001 C CNN
 F 3 "~" H 1050 1650 50  0001 C CNN
 	1    1050 1650
 	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP7
-U 1 1 6A97A748
-P 8050 3650
-F 0 "JP7" H 7850 3700 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8050 3764 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8050 3650 50  0001 C CNN
-F 3 "~" H 8050 3650 50  0001 C CNN
-	1    8050 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP8
-U 1 1 6A9CEA05
-P 8050 3750
-F 0 "JP8" H 7850 3800 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8050 3864 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8050 3750 50  0001 C CNN
-F 3 "~" H 8050 3750 50  0001 C CNN
-	1    8050 3750
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Net-Tie_2 NT2
@@ -2557,7 +2433,7 @@ U 1 1 6A9F87DC
 P 8050 3000
 F 0 "NT2" H 8050 3050 50  0000 C CNN
 F 1 "Net-Tie_2" H 8050 3090 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 3000 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Custom" H 8050 3000 50  0001 C CNN
 F 3 "~" H 8050 3000 50  0001 C CNN
 	1    8050 3000
 	1    0    0    -1  
@@ -2569,23 +2445,23 @@ Wire Wire Line
 $Comp
 L Device:Net-Tie_2 NT3
 U 1 1 6AAA1105
-P 8050 3400
-F 0 "NT3" H 8050 3450 50  0000 C CNN
-F 1 "Net-Tie_2" H 8050 3490 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 3400 50  0001 C CNN
-F 3 "~" H 8050 3400 50  0001 C CNN
-	1    8050 3400
+P 8050 3500
+F 0 "NT3" H 8050 3550 50  0000 C CNN
+F 1 "Net-Tie_2" H 8050 3590 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Custom" H 8050 3500 50  0001 C CNN
+F 3 "~" H 8050 3500 50  0001 C CNN
+	1    8050 3500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Net-Tie_2 NT4
 U 1 1 6AAC9C1E
-P 8050 3500
-F 0 "NT4" H 8050 3550 50  0000 C CNN
-F 1 "Net-Tie_2" H 8050 3590 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 3500 50  0001 C CNN
-F 3 "~" H 8050 3500 50  0001 C CNN
-	1    8050 3500
+P 8050 3600
+F 0 "NT4" H 8050 3650 50  0000 C CNN
+F 1 "Net-Tie_2" H 8050 3690 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Custom" H 8050 3600 50  0001 C CNN
+F 3 "~" H 8050 3600 50  0001 C CNN
+	1    8050 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2594,7 +2470,7 @@ U 1 1 6AB4359A
 P 8050 4100
 F 0 "NT5" H 8050 4150 50  0000 C CNN
 F 1 "Net-Tie_2" H 8050 4190 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 4100 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Custom" H 8050 4100 50  0001 C CNN
 F 3 "~" H 8050 4100 50  0001 C CNN
 	1    8050 4100
 	1    0    0    -1  
@@ -2605,7 +2481,7 @@ U 1 1 6AB435A4
 P 8050 4200
 F 0 "NT6" H 8050 4250 50  0000 C CNN
 F 1 "Net-Tie_2" H 8050 4290 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8050 4200 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Custom" H 8050 4200 50  0001 C CNN
 F 3 "~" H 8050 4200 50  0001 C CNN
 	1    8050 4200
 	1    0    0    -1  
@@ -2616,7 +2492,7 @@ U 1 1 6AC10768
 P 5400 3800
 F 0 "NT1" H 5400 3850 50  0000 C CNN
 F 1 "Net-Tie_2" H 5400 3890 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5400 3800 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Custom" H 5400 3800 50  0001 C CNN
 F 3 "~" H 5400 3800 50  0001 C CNN
 	1    5400 3800
 	1    0    0    -1  
@@ -2627,7 +2503,7 @@ U 1 1 6ACB5424
 P 9550 1400
 F 0 "JP9" H 9350 1450 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 9550 1514 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9550 1400 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_Open_Pad1.0x1.5mm_custom" H 9550 1400 50  0001 C CNN
 F 3 "~" H 9550 1400 50  0001 C CNN
 	1    9550 1400
 	1    0    0    -1  
@@ -2654,7 +2530,7 @@ U 1 1 6913EBE4
 P 2500 3350
 F 0 "JP6" H 2300 3400 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2500 3464 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2500 3350 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_Open_Pad1.0x1.5mm_custom" H 2500 3350 50  0001 C CNN
 F 3 "~" H 2500 3350 50  0001 C CNN
 	1    2500 3350
 	1    0    0    -1  
@@ -2677,7 +2553,7 @@ U 1 1 694AAEA1
 P 8000 6400
 F 0 "JP10" H 7800 6450 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 8000 6514 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8000 6400 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_Open_Pad1.0x1.5mm_custom" H 8000 6400 50  0001 C CNN
 F 3 "~" H 8000 6400 50  0001 C CNN
 	1    8000 6400
 	0    1    1    0   
@@ -2715,4 +2591,12 @@ F 3 "~" H 4850 3500 50  0001 C CNN
 	1    4850 3500
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	1300 1150 1300 1850
+Wire Wire Line
+	1300 2250 1300 2950
+Wire Wire Line
+	6950 3600 7950 3600
+Wire Wire Line
+	6950 3500 7950 3500
 $EndSCHEMATC

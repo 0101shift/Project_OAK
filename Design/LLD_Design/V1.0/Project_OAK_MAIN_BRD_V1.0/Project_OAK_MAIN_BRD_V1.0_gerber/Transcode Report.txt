@@ -1,0 +1,190 @@
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-B_Mask.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D11   --> D100
+D12   --> D101
+D14   --> D102
+D15   --> D103
+D16   --> D104
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-B_Paste.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D10   --> D105
+D12   --> D106
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-B_SilkS.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D10   --> D107
+D11   --> D108
+D12   --> D109
+D14   --> D110
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-Edge_Cuts.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D10   --> D111
+D11   --> D112
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-F_Cu.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D10   --> D113
+D11   --> D114
+D12   --> D115
+D14   --> D116
+D15   --> D117
+D16   --> D118
+D17   --> D119
+D18   --> D120
+D19   --> D121
+D20   --> D122
+D21   --> D123
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-F_Mask.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D10   --> D124
+D11   --> D125
+D13   --> D126
+D14   --> D127
+D15   --> D128
+D16   --> D129
+D17   --> D130
+D18   --> D131
+D19   --> D132
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-F_Paste.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D10   --> D133
+D11   --> D134
+D12   --> D135
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-F_SilkS.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D10   --> D136
+D11   --> D137
+D12   --> D138
+D13   --> D139
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-In1_Cu.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D10   --> D140
+D11   --> D141
+D12   --> D142
+D13   --> D143
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-In2_Cu.gbr' ----   Wed Oct 29 08:21:25 2025
+
+D10   --> D144
+D11   --> D145
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-B_Mask.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D11   --> D100
+D12   --> D101
+D14   --> D102
+D15   --> D103
+D16   --> D104
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-B_Paste.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D10   --> D105
+D12   --> D106
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-B_SilkS.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D10   --> D107
+D11   --> D108
+D12   --> D109
+D14   --> D110
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-Edge_Cuts.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D10   --> D111
+D11   --> D112
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-F_Cu.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D10   --> D113
+D11   --> D114
+D12   --> D115
+D14   --> D116
+D15   --> D117
+D16   --> D118
+D17   --> D119
+D18   --> D120
+D19   --> D121
+D20   --> D122
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-F_Mask.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D10   --> D123
+D11   --> D124
+D13   --> D125
+D14   --> D126
+D15   --> D127
+D16   --> D128
+D17   --> D129
+D18   --> D130
+D19   --> D131
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-F_Paste.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D10   --> D132
+D11   --> D133
+D12   --> D134
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-F_SilkS.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D10   --> D135
+D11   --> D136
+D12   --> D137
+D13   --> D138
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-In1_Cu.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D10   --> D139
+D11   --> D140
+D12   --> D141
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANAND M\Documents\GitHub\Project_OAK\Design\LLD_Design\V1.0\Project_OAK_MAIN_BRD_V1.0\Project_OAK_MAIN_BRD_V1.0_gerber\Project_OAK_MAIN_BRD_V1.0-In2_Cu.gbr' ----   Wed Oct 29 08:36:09 2025
+
+D10   --> D142
+D11   --> D143
+-----------------------------------------------------------------

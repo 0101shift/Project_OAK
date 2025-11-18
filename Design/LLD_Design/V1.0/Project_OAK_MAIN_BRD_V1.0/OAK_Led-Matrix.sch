@@ -1,0 +1,1380 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "OAK LED MATRIX"
+Date "2025-11-16"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 691FDF96
+P 3300 1150
+AR Path="/691FDF96" Ref="R?"  Part="1" 
+AR Path="/691C3B8D/691FDF96" Ref="R?"  Part="1" 
+AR Path="/69210C88/691FDF96" Ref="R?"  Part="1" 
+F 0 "R?" V 3350 1300 50  0000 L CNN
+F 1 "560E" V 3350 850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3230 1150 50  0001 C CNN
+F 3 "~" H 3300 1150 50  0001 C CNN
+	1    3300 1150
+	0    -1   -1   0   
+$EndComp
+Text Label 2850 1150 0    50   ~ 0
+C1
+$Comp
+L Device:LED D?
+U 1 1 691FDF9D
+P 4250 1400
+AR Path="/691FDF9D" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDF9D" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDF9D" Ref="D?"  Part="1" 
+F 0 "D?" V 4350 1400 50  0000 R CNN
+F 1 "LED" V 4200 1350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 4250 1400 50  0001 C CNN
+F 3 "~" H 4250 1400 50  0001 C CNN
+	1    4250 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFA3
+P 4250 2050
+AR Path="/691FDFA3" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFA3" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFA3" Ref="D?"  Part="1" 
+F 0 "D?" V 4350 2050 50  0000 R CNN
+F 1 "LED" V 4200 2000 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 4250 2050 50  0001 C CNN
+F 3 "~" H 4250 2050 50  0001 C CNN
+	1    4250 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFA9
+P 4250 2800
+AR Path="/691FDFA9" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFA9" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFA9" Ref="D?"  Part="1" 
+F 0 "D?" V 4350 2800 50  0000 R CNN
+F 1 "LED" V 4200 2750 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 4250 2800 50  0001 C CNN
+F 3 "~" H 4250 2800 50  0001 C CNN
+	1    4250 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFAF
+P 4250 3600
+AR Path="/691FDFAF" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFAF" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFAF" Ref="D?"  Part="1" 
+F 0 "D?" V 4350 3600 50  0000 R CNN
+F 1 "LED" V 4200 3550 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 4250 3600 50  0001 C CNN
+F 3 "~" H 4250 3600 50  0001 C CNN
+	1    4250 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFB5
+P 4250 4400
+AR Path="/691FDFB5" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFB5" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFB5" Ref="D?"  Part="1" 
+F 0 "D?" V 4350 4400 50  0000 R CNN
+F 1 "LED" V 4200 4350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 4250 4400 50  0001 C CNN
+F 3 "~" H 4250 4400 50  0001 C CNN
+	1    4250 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFBB
+P 4250 5200
+AR Path="/691FDFBB" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFBB" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFBB" Ref="D?"  Part="1" 
+F 0 "D?" V 4350 5200 50  0000 R CNN
+F 1 "LED" V 4200 5150 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 4250 5200 50  0001 C CNN
+F 3 "~" H 4250 5200 50  0001 C CNN
+	1    4250 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 5500 4250 5350
+Wire Wire Line
+	4250 4550 4250 4750
+Wire Wire Line
+	4250 4750 4150 4750
+Wire Wire Line
+	4150 4750 4150 5500
+Wire Wire Line
+	4150 5500 4250 5500
+Wire Wire Line
+	4250 3750 4250 3950
+Wire Wire Line
+	4250 3950 4150 3950
+Wire Wire Line
+	4150 3950 4150 4750
+Connection ~ 4150 4750
+Wire Wire Line
+	4250 2950 4250 3150
+Wire Wire Line
+	4250 3150 4150 3150
+Wire Wire Line
+	4150 3150 4150 3950
+Connection ~ 4150 3950
+Wire Wire Line
+	4250 2200 4250 2350
+Wire Wire Line
+	4250 2350 4150 2350
+Wire Wire Line
+	4150 2350 4150 3150
+Connection ~ 4150 3150
+Wire Wire Line
+	4250 1550 4250 1600
+Wire Wire Line
+	4250 1600 4150 1600
+Wire Wire Line
+	4150 1600 4150 2350
+Connection ~ 4150 2350
+Wire Wire Line
+	4150 6150 4150 5500
+Connection ~ 4150 5500
+Text Label 4150 5750 0    50   ~ 0
+R1
+$Comp
+L Device:LED D?
+U 1 1 691FDFD9
+P 5100 1400
+AR Path="/691FDFD9" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFD9" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFD9" Ref="D?"  Part="1" 
+F 0 "D?" V 5200 1400 50  0000 R CNN
+F 1 "LED" V 5050 1350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5100 1400 50  0001 C CNN
+F 3 "~" H 5100 1400 50  0001 C CNN
+	1    5100 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFDF
+P 5100 2050
+AR Path="/691FDFDF" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFDF" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFDF" Ref="D?"  Part="1" 
+F 0 "D?" V 5200 2050 50  0000 R CNN
+F 1 "LED" V 5050 2000 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5100 2050 50  0001 C CNN
+F 3 "~" H 5100 2050 50  0001 C CNN
+	1    5100 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFE5
+P 5100 2800
+AR Path="/691FDFE5" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFE5" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFE5" Ref="D?"  Part="1" 
+F 0 "D?" V 5200 2800 50  0000 R CNN
+F 1 "LED" V 5050 2750 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5100 2800 50  0001 C CNN
+F 3 "~" H 5100 2800 50  0001 C CNN
+	1    5100 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFEB
+P 5100 3600
+AR Path="/691FDFEB" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFEB" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFEB" Ref="D?"  Part="1" 
+F 0 "D?" V 5200 3600 50  0000 R CNN
+F 1 "LED" V 5050 3550 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5100 3600 50  0001 C CNN
+F 3 "~" H 5100 3600 50  0001 C CNN
+	1    5100 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFF1
+P 5100 4400
+AR Path="/691FDFF1" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFF1" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFF1" Ref="D?"  Part="1" 
+F 0 "D?" V 5200 4400 50  0000 R CNN
+F 1 "LED" V 5050 4350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5100 4400 50  0001 C CNN
+F 3 "~" H 5100 4400 50  0001 C CNN
+	1    5100 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FDFF7
+P 5100 5200
+AR Path="/691FDFF7" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FDFF7" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FDFF7" Ref="D?"  Part="1" 
+F 0 "D?" V 5200 5200 50  0000 R CNN
+F 1 "LED" V 5050 5150 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5100 5200 50  0001 C CNN
+F 3 "~" H 5100 5200 50  0001 C CNN
+	1    5100 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 5500 5100 5350
+Wire Wire Line
+	5100 4550 5100 4750
+Wire Wire Line
+	5100 4750 5000 4750
+Wire Wire Line
+	5000 4750 5000 5500
+Wire Wire Line
+	5000 5500 5100 5500
+Wire Wire Line
+	5100 3750 5100 3950
+Wire Wire Line
+	5100 3950 5000 3950
+Wire Wire Line
+	5000 3950 5000 4750
+Connection ~ 5000 4750
+Wire Wire Line
+	5100 2950 5100 3150
+Wire Wire Line
+	5100 3150 5000 3150
+Wire Wire Line
+	5000 3150 5000 3950
+Connection ~ 5000 3950
+Wire Wire Line
+	5100 2200 5100 2350
+Wire Wire Line
+	5100 2350 5000 2350
+Wire Wire Line
+	5000 2350 5000 3150
+Connection ~ 5000 3150
+Wire Wire Line
+	5100 1550 5100 1600
+Wire Wire Line
+	5100 1600 5000 1600
+Wire Wire Line
+	5000 1600 5000 2350
+Connection ~ 5000 2350
+Wire Wire Line
+	5000 6150 5000 5500
+Connection ~ 5000 5500
+Text Label 5000 5750 0    50   ~ 0
+R2
+$Comp
+L Device:LED D?
+U 1 1 691FE015
+P 5950 1400
+AR Path="/691FE015" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE015" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE015" Ref="D?"  Part="1" 
+F 0 "D?" V 6050 1400 50  0000 R CNN
+F 1 "LED" V 5900 1350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5950 1400 50  0001 C CNN
+F 3 "~" H 5950 1400 50  0001 C CNN
+	1    5950 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE01B
+P 5950 2050
+AR Path="/691FE01B" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE01B" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE01B" Ref="D?"  Part="1" 
+F 0 "D?" V 6050 2050 50  0000 R CNN
+F 1 "LED" V 5900 2000 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5950 2050 50  0001 C CNN
+F 3 "~" H 5950 2050 50  0001 C CNN
+	1    5950 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE021
+P 5950 2800
+AR Path="/691FE021" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE021" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE021" Ref="D?"  Part="1" 
+F 0 "D?" V 6050 2800 50  0000 R CNN
+F 1 "LED" V 5900 2750 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5950 2800 50  0001 C CNN
+F 3 "~" H 5950 2800 50  0001 C CNN
+	1    5950 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE027
+P 5950 3600
+AR Path="/691FE027" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE027" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE027" Ref="D?"  Part="1" 
+F 0 "D?" V 6050 3600 50  0000 R CNN
+F 1 "LED" V 5900 3550 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5950 3600 50  0001 C CNN
+F 3 "~" H 5950 3600 50  0001 C CNN
+	1    5950 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE02D
+P 5950 4400
+AR Path="/691FE02D" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE02D" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE02D" Ref="D?"  Part="1" 
+F 0 "D?" V 6050 4400 50  0000 R CNN
+F 1 "LED" V 5900 4350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5950 4400 50  0001 C CNN
+F 3 "~" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE033
+P 5950 5200
+AR Path="/691FE033" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE033" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE033" Ref="D?"  Part="1" 
+F 0 "D?" V 6050 5200 50  0000 R CNN
+F 1 "LED" V 5900 5150 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 5950 5200 50  0001 C CNN
+F 3 "~" H 5950 5200 50  0001 C CNN
+	1    5950 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 5500 5950 5350
+Wire Wire Line
+	5950 4550 5950 4750
+Wire Wire Line
+	5950 4750 5850 4750
+Wire Wire Line
+	5850 4750 5850 5500
+Wire Wire Line
+	5850 5500 5950 5500
+Wire Wire Line
+	5950 3750 5950 3950
+Wire Wire Line
+	5950 3950 5850 3950
+Wire Wire Line
+	5850 3950 5850 4750
+Connection ~ 5850 4750
+Wire Wire Line
+	5950 2950 5950 3150
+Wire Wire Line
+	5950 3150 5850 3150
+Wire Wire Line
+	5850 3150 5850 3950
+Connection ~ 5850 3950
+Wire Wire Line
+	5950 2200 5950 2350
+Wire Wire Line
+	5950 2350 5850 2350
+Wire Wire Line
+	5850 2350 5850 3150
+Connection ~ 5850 3150
+Wire Wire Line
+	5950 1550 5950 1600
+Wire Wire Line
+	5950 1600 5850 1600
+Wire Wire Line
+	5850 1600 5850 2350
+Connection ~ 5850 2350
+Wire Wire Line
+	5850 6150 5850 5500
+Connection ~ 5850 5500
+$Comp
+L Device:LED D?
+U 1 1 691FE050
+P 6750 1400
+AR Path="/691FE050" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE050" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE050" Ref="D?"  Part="1" 
+F 0 "D?" V 6850 1400 50  0000 R CNN
+F 1 "LED" V 6700 1350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 6750 1400 50  0001 C CNN
+F 3 "~" H 6750 1400 50  0001 C CNN
+	1    6750 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE056
+P 6750 2050
+AR Path="/691FE056" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE056" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE056" Ref="D?"  Part="1" 
+F 0 "D?" V 6850 2050 50  0000 R CNN
+F 1 "LED" V 6700 2000 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 6750 2050 50  0001 C CNN
+F 3 "~" H 6750 2050 50  0001 C CNN
+	1    6750 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE05C
+P 6750 2800
+AR Path="/691FE05C" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE05C" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE05C" Ref="D?"  Part="1" 
+F 0 "D?" V 6850 2800 50  0000 R CNN
+F 1 "LED" V 6700 2750 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 6750 2800 50  0001 C CNN
+F 3 "~" H 6750 2800 50  0001 C CNN
+	1    6750 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE062
+P 6750 3600
+AR Path="/691FE062" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE062" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE062" Ref="D?"  Part="1" 
+F 0 "D?" V 6850 3600 50  0000 R CNN
+F 1 "LED" V 6700 3550 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 6750 3600 50  0001 C CNN
+F 3 "~" H 6750 3600 50  0001 C CNN
+	1    6750 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE068
+P 6750 4400
+AR Path="/691FE068" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE068" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE068" Ref="D?"  Part="1" 
+F 0 "D?" V 6850 4400 50  0000 R CNN
+F 1 "LED" V 6700 4350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 6750 4400 50  0001 C CNN
+F 3 "~" H 6750 4400 50  0001 C CNN
+	1    6750 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE06E
+P 6750 5200
+AR Path="/691FE06E" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE06E" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE06E" Ref="D?"  Part="1" 
+F 0 "D?" V 6850 5200 50  0000 R CNN
+F 1 "LED" V 6700 5150 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 6750 5200 50  0001 C CNN
+F 3 "~" H 6750 5200 50  0001 C CNN
+	1    6750 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 5500 6750 5350
+Wire Wire Line
+	6750 4550 6750 4750
+Wire Wire Line
+	6750 4750 6650 4750
+Wire Wire Line
+	6650 4750 6650 5500
+Wire Wire Line
+	6650 5500 6750 5500
+Wire Wire Line
+	6750 3750 6750 3950
+Wire Wire Line
+	6750 3950 6650 3950
+Wire Wire Line
+	6650 3950 6650 4750
+Connection ~ 6650 4750
+Wire Wire Line
+	6750 2950 6750 3150
+Wire Wire Line
+	6750 3150 6650 3150
+Wire Wire Line
+	6650 3150 6650 3950
+Connection ~ 6650 3950
+Wire Wire Line
+	6750 2200 6750 2350
+Wire Wire Line
+	6750 2350 6650 2350
+Wire Wire Line
+	6650 2350 6650 3150
+Connection ~ 6650 3150
+Wire Wire Line
+	6750 1550 6750 1600
+Wire Wire Line
+	6750 1600 6650 1600
+Wire Wire Line
+	6650 1600 6650 2350
+Connection ~ 6650 2350
+Wire Wire Line
+	6650 6150 6650 5500
+Connection ~ 6650 5500
+Text Label 6650 5750 0    50   ~ 0
+R4
+$Comp
+L Device:LED D?
+U 1 1 691FE08C
+P 7550 1400
+AR Path="/691FE08C" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE08C" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE08C" Ref="D?"  Part="1" 
+F 0 "D?" V 7650 1400 50  0000 R CNN
+F 1 "LED" V 7500 1350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 7550 1400 50  0001 C CNN
+F 3 "~" H 7550 1400 50  0001 C CNN
+	1    7550 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE092
+P 7550 2050
+AR Path="/691FE092" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE092" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE092" Ref="D?"  Part="1" 
+F 0 "D?" V 7650 2050 50  0000 R CNN
+F 1 "LED" V 7500 2000 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 7550 2050 50  0001 C CNN
+F 3 "~" H 7550 2050 50  0001 C CNN
+	1    7550 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE098
+P 7550 2800
+AR Path="/691FE098" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE098" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE098" Ref="D?"  Part="1" 
+F 0 "D?" V 7650 2800 50  0000 R CNN
+F 1 "LED" V 7500 2750 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 7550 2800 50  0001 C CNN
+F 3 "~" H 7550 2800 50  0001 C CNN
+	1    7550 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE09E
+P 7550 3600
+AR Path="/691FE09E" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE09E" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE09E" Ref="D?"  Part="1" 
+F 0 "D?" V 7650 3600 50  0000 R CNN
+F 1 "LED" V 7500 3550 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 7550 3600 50  0001 C CNN
+F 3 "~" H 7550 3600 50  0001 C CNN
+	1    7550 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE0A4
+P 7550 4400
+AR Path="/691FE0A4" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE0A4" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE0A4" Ref="D?"  Part="1" 
+F 0 "D?" V 7650 4400 50  0000 R CNN
+F 1 "LED" V 7500 4350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 7550 4400 50  0001 C CNN
+F 3 "~" H 7550 4400 50  0001 C CNN
+	1    7550 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE0AA
+P 7550 5200
+AR Path="/691FE0AA" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE0AA" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE0AA" Ref="D?"  Part="1" 
+F 0 "D?" V 7650 5200 50  0000 R CNN
+F 1 "LED" V 7500 5150 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 7550 5200 50  0001 C CNN
+F 3 "~" H 7550 5200 50  0001 C CNN
+	1    7550 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 5500 7550 5350
+Wire Wire Line
+	7550 4550 7550 4750
+Wire Wire Line
+	7550 4750 7450 4750
+Wire Wire Line
+	7450 4750 7450 5500
+Wire Wire Line
+	7450 5500 7550 5500
+Wire Wire Line
+	7550 3750 7550 3950
+Wire Wire Line
+	7550 3950 7450 3950
+Wire Wire Line
+	7450 3950 7450 4750
+Connection ~ 7450 4750
+Wire Wire Line
+	7550 2950 7550 3150
+Wire Wire Line
+	7550 3150 7450 3150
+Wire Wire Line
+	7450 3150 7450 3950
+Connection ~ 7450 3950
+Wire Wire Line
+	7550 2200 7550 2350
+Wire Wire Line
+	7550 2350 7450 2350
+Wire Wire Line
+	7450 2350 7450 3150
+Connection ~ 7450 3150
+Wire Wire Line
+	7550 1550 7550 1600
+Wire Wire Line
+	7550 1600 7450 1600
+Wire Wire Line
+	7450 1600 7450 2350
+Connection ~ 7450 2350
+Wire Wire Line
+	7450 6150 7450 5500
+Connection ~ 7450 5500
+$Comp
+L Device:LED D?
+U 1 1 691FE0C7
+P 8350 1400
+AR Path="/691FE0C7" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE0C7" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE0C7" Ref="D?"  Part="1" 
+F 0 "D?" V 8450 1400 50  0000 R CNN
+F 1 "LED" V 8300 1350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 8350 1400 50  0001 C CNN
+F 3 "~" H 8350 1400 50  0001 C CNN
+	1    8350 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE0CD
+P 8350 2050
+AR Path="/691FE0CD" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE0CD" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE0CD" Ref="D?"  Part="1" 
+F 0 "D?" V 8450 2050 50  0000 R CNN
+F 1 "LED" V 8300 2000 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 8350 2050 50  0001 C CNN
+F 3 "~" H 8350 2050 50  0001 C CNN
+	1    8350 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE0D3
+P 8350 2800
+AR Path="/691FE0D3" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE0D3" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE0D3" Ref="D?"  Part="1" 
+F 0 "D?" V 8450 2800 50  0000 R CNN
+F 1 "LED" V 8300 2750 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 8350 2800 50  0001 C CNN
+F 3 "~" H 8350 2800 50  0001 C CNN
+	1    8350 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE0D9
+P 8350 3600
+AR Path="/691FE0D9" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE0D9" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE0D9" Ref="D?"  Part="1" 
+F 0 "D?" V 8450 3600 50  0000 R CNN
+F 1 "LED" V 8300 3550 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 8350 3600 50  0001 C CNN
+F 3 "~" H 8350 3600 50  0001 C CNN
+	1    8350 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE0DF
+P 8350 4400
+AR Path="/691FE0DF" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE0DF" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE0DF" Ref="D?"  Part="1" 
+F 0 "D?" V 8450 4400 50  0000 R CNN
+F 1 "LED" V 8300 4350 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 8350 4400 50  0001 C CNN
+F 3 "~" H 8350 4400 50  0001 C CNN
+	1    8350 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 691FE0E5
+P 8350 5200
+AR Path="/691FE0E5" Ref="D?"  Part="1" 
+AR Path="/691C3B8D/691FE0E5" Ref="D?"  Part="1" 
+AR Path="/69210C88/691FE0E5" Ref="D?"  Part="1" 
+F 0 "D?" V 8450 5200 50  0000 R CNN
+F 1 "LED" V 8300 5150 50  0001 R CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 8350 5200 50  0001 C CNN
+F 3 "~" H 8350 5200 50  0001 C CNN
+	1    8350 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8350 5500 8350 5350
+Wire Wire Line
+	8350 4550 8350 4750
+Wire Wire Line
+	8350 4750 8250 4750
+Wire Wire Line
+	8250 4750 8250 5500
+Wire Wire Line
+	8250 5500 8350 5500
+Wire Wire Line
+	8350 3750 8350 3950
+Wire Wire Line
+	8350 3950 8250 3950
+Wire Wire Line
+	8250 3950 8250 4750
+Connection ~ 8250 4750
+Wire Wire Line
+	8350 2950 8350 3150
+Wire Wire Line
+	8350 3150 8250 3150
+Wire Wire Line
+	8250 3150 8250 3950
+Connection ~ 8250 3950
+Wire Wire Line
+	8350 2200 8350 2350
+Wire Wire Line
+	8350 2350 8250 2350
+Wire Wire Line
+	8250 2350 8250 3150
+Connection ~ 8250 3150
+Wire Wire Line
+	8350 1550 8350 1600
+Wire Wire Line
+	8350 1600 8250 1600
+Wire Wire Line
+	8250 1600 8250 2350
+Connection ~ 8250 2350
+Wire Wire Line
+	8250 6150 8250 5500
+Connection ~ 8250 5500
+Text Label 5850 5750 0    50   ~ 0
+R3
+Text Label 7450 5750 0    50   ~ 0
+R5
+Text Label 8250 5750 0    50   ~ 0
+R6
+Wire Wire Line
+	8350 1250 8350 1150
+Wire Wire Line
+	8350 1150 7550 1150
+Wire Wire Line
+	4250 1150 4250 1250
+Wire Wire Line
+	5100 1250 5100 1150
+Connection ~ 5100 1150
+Wire Wire Line
+	5100 1150 4250 1150
+Wire Wire Line
+	5950 1250 5950 1150
+Connection ~ 5950 1150
+Wire Wire Line
+	5950 1150 5100 1150
+Wire Wire Line
+	6750 1250 6750 1150
+Connection ~ 6750 1150
+Wire Wire Line
+	6750 1150 5950 1150
+Wire Wire Line
+	7550 1250 7550 1150
+Connection ~ 7550 1150
+Wire Wire Line
+	7550 1150 6750 1150
+Wire Wire Line
+	2500 1150 3150 1150
+$Comp
+L Device:R R?
+U 1 1 691FE115
+P 3300 1850
+AR Path="/691FE115" Ref="R?"  Part="1" 
+AR Path="/691C3B8D/691FE115" Ref="R?"  Part="1" 
+AR Path="/69210C88/691FE115" Ref="R?"  Part="1" 
+F 0 "R?" V 3350 2000 50  0000 L CNN
+F 1 "560E" V 3350 1550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3230 1850 50  0001 C CNN
+F 3 "~" H 3300 1850 50  0001 C CNN
+	1    3300 1850
+	0    -1   -1   0   
+$EndComp
+Text Label 2850 1850 0    50   ~ 0
+C2
+Wire Wire Line
+	2500 1850 3150 1850
+Wire Wire Line
+	8350 1850 8350 1900
+Wire Wire Line
+	7550 1900 7550 1850
+Connection ~ 7550 1850
+Wire Wire Line
+	7550 1850 8350 1850
+Wire Wire Line
+	6750 1900 6750 1850
+Connection ~ 6750 1850
+Wire Wire Line
+	6750 1850 7550 1850
+Wire Wire Line
+	5950 1900 5950 1850
+Connection ~ 5950 1850
+Wire Wire Line
+	5950 1850 6750 1850
+Wire Wire Line
+	5100 1900 5100 1850
+Connection ~ 5100 1850
+Wire Wire Line
+	5100 1850 5950 1850
+Wire Wire Line
+	4250 1900 4250 1850
+Wire Wire Line
+	4250 1850 5100 1850
+$Comp
+L Device:R R?
+U 1 1 691FE12C
+P 3300 2600
+AR Path="/691FE12C" Ref="R?"  Part="1" 
+AR Path="/691C3B8D/691FE12C" Ref="R?"  Part="1" 
+AR Path="/69210C88/691FE12C" Ref="R?"  Part="1" 
+F 0 "R?" V 3350 2750 50  0000 L CNN
+F 1 "560E" V 3350 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3230 2600 50  0001 C CNN
+F 3 "~" H 3300 2600 50  0001 C CNN
+	1    3300 2600
+	0    -1   -1   0   
+$EndComp
+Text Label 2850 2600 0    50   ~ 0
+C3
+Wire Wire Line
+	2500 2600 3150 2600
+$Comp
+L Device:R R?
+U 1 1 691FE134
+P 3300 3400
+AR Path="/691FE134" Ref="R?"  Part="1" 
+AR Path="/691C3B8D/691FE134" Ref="R?"  Part="1" 
+AR Path="/69210C88/691FE134" Ref="R?"  Part="1" 
+F 0 "R?" V 3350 3550 50  0000 L CNN
+F 1 "560E" V 3350 3100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3230 3400 50  0001 C CNN
+F 3 "~" H 3300 3400 50  0001 C CNN
+	1    3300 3400
+	0    -1   -1   0   
+$EndComp
+Text Label 2850 3400 0    50   ~ 0
+C4
+Wire Wire Line
+	2500 3400 3150 3400
+$Comp
+L Device:R R?
+U 1 1 691FE13C
+P 3300 4200
+AR Path="/691FE13C" Ref="R?"  Part="1" 
+AR Path="/691C3B8D/691FE13C" Ref="R?"  Part="1" 
+AR Path="/69210C88/691FE13C" Ref="R?"  Part="1" 
+F 0 "R?" V 3350 4350 50  0000 L CNN
+F 1 "560E" V 3350 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3230 4200 50  0001 C CNN
+F 3 "~" H 3300 4200 50  0001 C CNN
+	1    3300 4200
+	0    -1   -1   0   
+$EndComp
+Text Label 2850 4200 0    50   ~ 0
+C5
+Wire Wire Line
+	2500 4200 3150 4200
+$Comp
+L Device:R R?
+U 1 1 691FE144
+P 3300 5000
+AR Path="/691FE144" Ref="R?"  Part="1" 
+AR Path="/691C3B8D/691FE144" Ref="R?"  Part="1" 
+AR Path="/69210C88/691FE144" Ref="R?"  Part="1" 
+F 0 "R?" V 3350 5150 50  0000 L CNN
+F 1 "560E" V 3350 4700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3230 5000 50  0001 C CNN
+F 3 "~" H 3300 5000 50  0001 C CNN
+	1    3300 5000
+	0    -1   -1   0   
+$EndComp
+Text Label 2850 5000 0    50   ~ 0
+C6
+Wire Wire Line
+	2500 5000 3150 5000
+Wire Wire Line
+	4250 2600 4250 2650
+Wire Wire Line
+	4250 2600 5100 2600
+Wire Wire Line
+	5100 2600 5100 2650
+Connection ~ 4250 2600
+Wire Wire Line
+	5100 2600 5950 2600
+Wire Wire Line
+	8350 2600 8350 2650
+Connection ~ 5100 2600
+Wire Wire Line
+	7550 2650 7550 2600
+Connection ~ 7550 2600
+Wire Wire Line
+	7550 2600 8350 2600
+Wire Wire Line
+	6750 2650 6750 2600
+Connection ~ 6750 2600
+Wire Wire Line
+	6750 2600 7550 2600
+Wire Wire Line
+	5950 2650 5950 2600
+Connection ~ 5950 2600
+Wire Wire Line
+	5950 2600 6750 2600
+Wire Wire Line
+	8350 3450 8350 3400
+Wire Wire Line
+	8350 3400 7550 3400
+Wire Wire Line
+	7550 3400 7550 3450
+Wire Wire Line
+	7550 3400 6750 3400
+Wire Wire Line
+	6750 3400 6750 3450
+Connection ~ 7550 3400
+Wire Wire Line
+	6750 3400 5950 3400
+Wire Wire Line
+	5950 3400 5950 3450
+Connection ~ 6750 3400
+Wire Wire Line
+	5950 3400 5100 3400
+Wire Wire Line
+	5100 3400 5100 3450
+Connection ~ 5950 3400
+Wire Wire Line
+	5100 3400 4250 3400
+Wire Wire Line
+	4250 3400 4250 3450
+Connection ~ 5100 3400
+Wire Wire Line
+	4250 4250 4250 4200
+Wire Wire Line
+	4250 4200 5100 4200
+Wire Wire Line
+	5100 4200 5100 4250
+Wire Wire Line
+	5100 4200 5950 4200
+Wire Wire Line
+	5950 4200 5950 4250
+Connection ~ 5100 4200
+Wire Wire Line
+	5950 4200 6750 4200
+Wire Wire Line
+	6750 4200 6750 4250
+Connection ~ 5950 4200
+Wire Wire Line
+	6750 4200 7550 4200
+Wire Wire Line
+	7550 4200 7550 4250
+Connection ~ 6750 4200
+Wire Wire Line
+	7550 4200 8350 4200
+Wire Wire Line
+	8350 4200 8350 4250
+Connection ~ 7550 4200
+Wire Wire Line
+	8350 5050 8350 5000
+Wire Wire Line
+	8350 5000 7550 5000
+Wire Wire Line
+	7550 5000 7550 5050
+Wire Wire Line
+	7550 5000 6750 5000
+Wire Wire Line
+	6750 5000 6750 5050
+Connection ~ 7550 5000
+Wire Wire Line
+	6750 5000 5950 5000
+Wire Wire Line
+	5950 5000 5950 5050
+Connection ~ 6750 5000
+Wire Wire Line
+	5950 5000 5100 5000
+Wire Wire Line
+	5100 5000 5100 5050
+Connection ~ 5950 5000
+Wire Wire Line
+	5100 5000 4250 5000
+Wire Wire Line
+	4250 5000 4250 5050
+Connection ~ 5100 5000
+Connection ~ 4250 3400
+Connection ~ 4250 4200
+Connection ~ 4250 5000
+Text Label 4100 2600 2    50   ~ 0
+C3_T
+Text Label 4100 3400 2    50   ~ 0
+C4_T
+Text Label 4100 4200 2    50   ~ 0
+C5_T
+Text Label 4100 5000 2    50   ~ 0
+C6_T
+Wire Notes Line
+	8550 1050 8550 2500
+Text Notes 8650 2000 1    50   ~ 0
+Hour LEDs
+Wire Notes Line
+	8550 2550 8550 5600
+Wire Notes Line
+	3900 2500 8550 2500
+Wire Notes Line
+	3900 1050 8550 1050
+Text Notes 8650 4350 1    50   ~ 0
+Minute LEDs
+Text Notes 4050 1450 0    50   ~ 0
+12
+Text Notes 4950 1450 0    50   ~ 0
+1
+Text Notes 5800 1450 0    50   ~ 0
+2
+Text Notes 6600 1450 0    50   ~ 0
+3
+Text Notes 7400 1450 0    50   ~ 0
+4
+Text Notes 8200 1450 0    50   ~ 0
+5
+Text Notes 8150 2100 0    50   ~ 0
+6
+Text Notes 7350 2100 0    50   ~ 0
+7
+Text Notes 6550 2100 0    50   ~ 0
+8
+Text Notes 5750 2100 0    50   ~ 0
+9
+Text Notes 4550 2100 0    50   ~ 0
+10
+Text Notes 4000 2100 0    50   ~ 0
+11
+Text Notes 4000 2850 0    50   ~ 0
+2.5
+Text Notes 4550 2850 0    50   ~ 0
+05
+Text Notes 5700 2850 0    50   ~ 0
+7.5
+Text Notes 6500 2850 0    50   ~ 0
+10
+Text Notes 7250 2850 0    50   ~ 0
+12.5
+Text Notes 8100 2850 0    50   ~ 0
+15
+Text Notes 8050 3650 0    50   ~ 0
+17.5
+Text Notes 7300 3650 0    50   ~ 0
+20
+Text Notes 6450 3650 0    50   ~ 0
+22.5
+Text Notes 5700 3650 0    50   ~ 0
+25
+Text Notes 4400 3650 0    50   ~ 0
+27.5
+Text Notes 4000 3650 0    50   ~ 0
+30
+Text Notes 3950 4450 0    50   ~ 0
+32.5
+Text Notes 4550 4450 0    50   ~ 0
+35
+Text Notes 5650 4450 0    50   ~ 0
+37.5
+Text Notes 6500 4450 0    50   ~ 0
+40
+Text Notes 7250 4450 0    50   ~ 0
+42.5
+Text Notes 8100 4450 0    50   ~ 0
+45
+Text Notes 8050 5250 0    50   ~ 0
+47.5
+Text Notes 7300 5250 0    50   ~ 0
+50
+Text Notes 6450 5250 0    50   ~ 0
+52.5
+Text Notes 5700 5250 0    50   ~ 0
+55
+Text Notes 4400 5250 0    50   ~ 0
+57.5
+Text Notes 4000 5250 0    50   ~ 0
+60
+Wire Wire Line
+	3450 5000 4250 5000
+Wire Wire Line
+	3450 4200 4250 4200
+Wire Wire Line
+	3450 3400 4250 3400
+Wire Wire Line
+	3450 2600 4250 2600
+Wire Wire Line
+	3450 1850 4250 1850
+Connection ~ 4250 1850
+Wire Wire Line
+	3450 1150 4250 1150
+Connection ~ 4250 1150
+Text Label 4100 1850 2    50   ~ 0
+C2_T
+Text Label 4100 1150 2    50   ~ 0
+C1_T
+Wire Notes Line
+	8550 5600 3900 5600
+Wire Notes Line
+	3900 1050 3900 5600
+Text Notes 7450 800  2    100  ~ 20
+need to confirm on resistance value
+Text HLabel 2500 1150 0    50   BiDi ~ 0
+C1
+Text HLabel 2500 1850 0    50   BiDi ~ 0
+C2
+Text HLabel 2500 2600 0    50   BiDi ~ 0
+C3
+Text HLabel 2500 3400 0    50   BiDi ~ 0
+C4
+Text HLabel 2500 4200 0    50   BiDi ~ 0
+C5
+Text HLabel 2500 5000 0    50   BiDi ~ 0
+C6
+Text HLabel 4150 6150 3    50   BiDi ~ 0
+R1
+Text HLabel 5000 6150 3    50   BiDi ~ 0
+R2
+Text HLabel 5850 6150 3    50   BiDi ~ 0
+R3
+Text HLabel 6650 6150 3    50   BiDi ~ 0
+R4
+Text HLabel 7450 6150 3    50   BiDi ~ 0
+R5
+Text HLabel 8250 6150 3    50   BiDi ~ 0
+R6
+$Comp
+L Device:C C?
+U 1 1 6957D822
+P 10800 1450
+AR Path="/6957D822" Ref="C?"  Part="1" 
+AR Path="/691C3B8D/6957D822" Ref="C?"  Part="1" 
+F 0 "C?" H 10800 1550 50  0000 L CNN
+F 1 "4.7u" H 10800 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10838 1300 50  0001 C CNN
+F 3 "~" H 10800 1450 50  0001 C CNN
+	1    10800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6957D828
+P 10800 1700
+AR Path="/6957D828" Ref="#PWR?"  Part="1" 
+AR Path="/691C3B8D/6957D828" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10800 1450 50  0001 C CNN
+F 1 "GND" H 10805 1527 50  0000 C CNN
+F 2 "" H 10800 1700 50  0001 C CNN
+F 3 "" H 10800 1700 50  0001 C CNN
+	1    10800 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 1600 10800 1700
+Text Label 10800 1300 1    50   ~ 0
+C6_T
+$Comp
+L Device:C C?
+U 1 1 6957D83E
+P 9600 1450
+AR Path="/6957D83E" Ref="C?"  Part="1" 
+AR Path="/691C3B8D/6957D83E" Ref="C?"  Part="1" 
+F 0 "C?" H 9600 1550 50  0000 L CNN
+F 1 "4.7u" H 9600 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9638 1300 50  0001 C CNN
+F 3 "~" H 9600 1450 50  0001 C CNN
+	1    9600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6957D844
+P 9600 1700
+AR Path="/6957D844" Ref="#PWR?"  Part="1" 
+AR Path="/691C3B8D/6957D844" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9600 1450 50  0001 C CNN
+F 1 "GND" H 9605 1527 50  0000 C CNN
+F 2 "" H 9600 1700 50  0001 C CNN
+F 3 "" H 9600 1700 50  0001 C CNN
+	1    9600 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1600 9600 1700
+Text Label 9600 1300 1    50   ~ 0
+C2_T
+$Comp
+L Device:C C?
+U 1 1 6957D84C
+P 9900 1450
+AR Path="/6957D84C" Ref="C?"  Part="1" 
+AR Path="/691C3B8D/6957D84C" Ref="C?"  Part="1" 
+F 0 "C?" H 9900 1550 50  0000 L CNN
+F 1 "4.7u" H 9900 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9938 1300 50  0001 C CNN
+F 3 "~" H 9900 1450 50  0001 C CNN
+	1    9900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6957D852
+P 9900 1700
+AR Path="/6957D852" Ref="#PWR?"  Part="1" 
+AR Path="/691C3B8D/6957D852" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 1450 50  0001 C CNN
+F 1 "GND" H 9905 1527 50  0000 C CNN
+F 2 "" H 9900 1700 50  0001 C CNN
+F 3 "" H 9900 1700 50  0001 C CNN
+	1    9900 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1600 9900 1700
+Text Label 9900 1300 1    50   ~ 0
+C3_T
+$Comp
+L Device:C C?
+U 1 1 6957D85A
+P 10200 1450
+AR Path="/6957D85A" Ref="C?"  Part="1" 
+AR Path="/691C3B8D/6957D85A" Ref="C?"  Part="1" 
+F 0 "C?" H 10200 1550 50  0000 L CNN
+F 1 "4.7u" H 10200 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10238 1300 50  0001 C CNN
+F 3 "~" H 10200 1450 50  0001 C CNN
+	1    10200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6957D860
+P 10200 1700
+AR Path="/6957D860" Ref="#PWR?"  Part="1" 
+AR Path="/691C3B8D/6957D860" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10200 1450 50  0001 C CNN
+F 1 "GND" H 10205 1527 50  0000 C CNN
+F 2 "" H 10200 1700 50  0001 C CNN
+F 3 "" H 10200 1700 50  0001 C CNN
+	1    10200 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 1600 10200 1700
+Text Label 10200 1300 1    50   ~ 0
+C4_T
+$Comp
+L Device:C C?
+U 1 1 6957D868
+P 10500 1450
+AR Path="/6957D868" Ref="C?"  Part="1" 
+AR Path="/691C3B8D/6957D868" Ref="C?"  Part="1" 
+F 0 "C?" H 10500 1550 50  0000 L CNN
+F 1 "4.7u" H 10500 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10538 1300 50  0001 C CNN
+F 3 "~" H 10500 1450 50  0001 C CNN
+	1    10500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6957D86E
+P 10500 1700
+AR Path="/6957D86E" Ref="#PWR?"  Part="1" 
+AR Path="/691C3B8D/6957D86E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10500 1450 50  0001 C CNN
+F 1 "GND" H 10505 1527 50  0000 C CNN
+F 2 "" H 10500 1700 50  0001 C CNN
+F 3 "" H 10500 1700 50  0001 C CNN
+	1    10500 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 1600 10500 1700
+Text Label 10500 1300 1    50   ~ 0
+C5_T
+Text Notes 9150 2050 0    50   ~ 0
+Note: Place the caps near to the LED junction
+Wire Wire Line
+	9600 1150 9600 1300
+Wire Wire Line
+	9900 1150 9900 1300
+Wire Wire Line
+	10200 1150 10200 1300
+Wire Wire Line
+	10500 1150 10500 1300
+Wire Wire Line
+	10800 1150 10800 1300
+Wire Wire Line
+	9300 1150 9300 1300
+Text Label 9300 1300 1    50   ~ 0
+C1_T
+Wire Wire Line
+	9300 1600 9300 1700
+$Comp
+L power:GND #PWR?
+U 1 1 6957D836
+P 9300 1700
+AR Path="/6957D836" Ref="#PWR?"  Part="1" 
+AR Path="/691C3B8D/6957D836" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9300 1450 50  0001 C CNN
+F 1 "GND" H 9305 1527 50  0000 C CNN
+F 2 "" H 9300 1700 50  0001 C CNN
+F 3 "" H 9300 1700 50  0001 C CNN
+	1    9300 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6957D830
+P 9300 1450
+AR Path="/6957D830" Ref="C?"  Part="1" 
+AR Path="/691C3B8D/6957D830" Ref="C?"  Part="1" 
+F 0 "C?" H 9300 1550 50  0000 L CNN
+F 1 "4.7u" H 9300 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9338 1300 50  0001 C CNN
+F 3 "~" H 9300 1450 50  0001 C CNN
+	1    9300 1450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

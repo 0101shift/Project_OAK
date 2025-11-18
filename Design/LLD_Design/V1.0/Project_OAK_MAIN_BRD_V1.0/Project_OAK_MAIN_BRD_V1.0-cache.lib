@@ -36,6 +36,40 @@ X ~ S2+ -300 0 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
+# BMA400_BMA400
+#
+DEF BMA400_BMA400 U 0 40 Y Y 1 L N
+F0 "U" -400 630 50 H V L BNN
+F1 "BMA400_BMA400" -400 -700 50 H V L BNN
+F2 "XDCR_BMA400" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Bosch Sensortec" 0 0 50 H I L BNN "MF"
+F5 "Accelerometer X, Y, Z Axis ±2g, 4g, 8g, 16g 12-LGA _2x2_" 0 0 50 H I L BNN "DESCRIPTION"
+F6 "LGA-12 Bosch Tools" 0 0 50 H I L BNN "PACKAGE"
+F7 "None" 0 0 50 H I L BNN "PRICE"
+F8 "LGA-12 Bosch Tools" 0 0 50 H I L BNN "Package"
+F9 "https://www.snapeda.com/parts/BMA400/Bosch/view-part/?ref=eda" 0 0 50 H I L BNN "Check_prices"
+F10 "None" 0 0 50 H I L BNN "Price"
+F11 "https://www.snapeda.com/parts/BMA400/Bosch/view-part/?ref=snap" 0 0 50 H I L BNN "SnapEDA_Link"
+F12 "BMA400" 0 0 50 H I L BNN "MP"
+F13 "In Stock" 0 0 50 H I L BNN "Availability"
+F14 "Unavailable" 0 0 50 H I L BNN "AVAILABILITY"
+F15 "\\n                        \\n                            Accelerometer X, Y, Z Axis ±2g, 4g, 8g, 16g 3Hz ~ 384Hz 12-LGA (2x2)\\n                        \\n" 0 0 50 H I L BNN "Description"
+DRAW
+S -400 -600 400 600 0 0 10 f
+X SDO 1 -600 -200 200 R 40 40 0 0 B
+X ~CSB 10 -600 200 200 R 40 40 0 0 I
+X SCX 12 -600 0 200 R 40 40 0 0 I C
+X SDX 2 -600 -100 200 R 40 40 0 0 B
+X VDDIO 3 600 400 200 L 40 40 0 0 W
+X INT1 5 600 0 200 L 40 40 0 0 B
+X INT2 6 600 -100 200 L 40 40 0 0 B
+X VDD 7 600 500 200 L 40 40 0 0 W
+X GNDIO 8 600 -400 200 L 40 40 0 0 W
+X GND 9 600 -500 200 L 40 40 0 0 W
+ENDDRAW
+ENDDEF
+#
 # Connector_TestPoint
 #
 DEF Connector_TestPoint TP 0 30 N N 1 F N
@@ -50,6 +84,33 @@ $ENDFPLIST
 DRAW
 C 0 130 30 0 1 0 N
 X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# DRV2605LYZFR_DRV2605LYZF
+#
+DEF DRV2605LYZFR_DRV2605LYZF U 0 -10 Y Y 1 F N
+F0 "U" 0 100 60 H V C CNN
+F1 "DRV2605LYZFR_DRV2605LYZF" 0 0 60 H V C CNN
+F2 "YZF0009ADAD" 0 -60 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ YZF0009ADAD
+$ENDFPLIST
+DRAW
+P 2 1 1 4 -600 -600 500 -600 N
+P 2 1 1 4 -600 600 -600 -600 N
+P 2 1 1 4 500 -600 500 600 N
+P 2 1 1 4 500 600 -600 600 N
+X EN A1 700 200 200 L 59 59 1 1 I
+X REG A2 -800 -400 200 R 59 59 1 1 W
+X OUT+ A3 -800 -100 200 R 59 59 1 1 O
+X IN_TRIG B1 700 400 200 L 59 59 1 1 I
+X SDA B2 700 -100 200 L 59 59 1 1 B
+X GND B3 -800 400 200 R 59 59 1 1 W
+X SCL C1 700 0 200 L 59 59 1 1 I
+X VDD C2 700 -400 200 L 59 59 1 1 W
+X OUT- C3 -800 100 200 R 59 59 1 1 O
 ENDDRAW
 ENDDEF
 #
@@ -201,40 +262,6 @@ P 2 0 1 0 -10 40 -10 -40 N
 P 2 0 1 0 10 40 10 -40 N
 X A 1 -150 0 100 R 50 50 1 1 P
 X B 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# LIS2DW12TR_LIS2DW12TR
-#
-DEF LIS2DW12TR_LIS2DW12TR U 0 40 N Y 1 L N
-F0 "U" -600 500 50 H V L BNN
-F1 "LIS2DW12TR_LIS2DW12TR" -600 -700 50 H V L BNN
-F2 "LGA12R50P4X4_200X200X70" 0 0 50 H I L BNN
-F3 "" 0 0 50 H I L BNN
-F4 "STMicroelectronics" 0 0 50 H I L BNN "MF"
-F5 "\\n                        \\n                            Accelerometer X, Y, Z Axis ±2g, 4g, 8g, 16g 400Hz 12-LGA (2x2)\\n                        \\n" 0 0 50 H I L BNN "Description"
-F6 "LGA-12 STMicroelectronics" 0 0 50 H I L BNN "Package"
-F7 "None" 0 0 50 H I L BNN "Price"
-F8 "https://www.snapeda.com/parts/LIS2DW12TR/STMicroelectronics/view-part/?ref=eda" 0 0 50 H I L BNN "Check_prices"
-F9 "IPC-7351B" 0 0 50 H I L BNN "STANDARD"
-F10 "4" 0 0 50 H I L BNN "PARTREV"
-F11 "https://www.snapeda.com/parts/LIS2DW12TR/STMicroelectronics/view-part/?ref=snap" 0 0 50 H I L BNN "SnapEDA_Link"
-F12 "LIS2DW12TR" 0 0 50 H I L BNN "MP"
-F13 "In Stock" 0 0 50 H I L BNN "Availability"
-F14 "STMicroelectronics" 0 0 50 H I L BNN "MANUFACTURER"
-DRAW
-S -600 -600 600 500 0 0 10 f
-X SCL/SPC 1 -800 100 200 R 40 40 0 0 I C
-X VDD_IO 10 800 300 200 L 40 40 0 0 W
-X INT2 11 800 0 200 L 40 40 0 0 O
-X INT1 12 800 100 200 L 40 40 0 0 O
-X CS 2 -800 0 200 R 40 40 0 0 I
-X SDO/SDA0 3 -800 -200 200 R 40 40 0 0 B
-X SDA/SDI/SDO 4 -800 -300 200 R 40 40 0 0 B
-X GND 6 800 -500 200 L 40 40 0 0 W
-X RES 7 800 -200 200 L 40 40 0 0 P
-X GND 8 800 -500 200 L 40 40 0 0 W
-X VDD 9 800 400 200 L 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #

@@ -1,0 +1,97 @@
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-F_Paste.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D10   --> D100
+D11   --> D101
+D12   --> D102
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-F_Mask.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D10   --> D103
+D11   --> D104
+D12   --> D105
+D14   --> D106
+D15   --> D107
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-F_Cu.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D10   --> D108
+D11   --> D109
+D12   --> D110
+D14   --> D111
+D15   --> D112
+D16   --> D113
+D17   --> D114
+D18   --> D115
+D19   --> D116
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-In1_Cu.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D10   --> D117
+D11   --> D118
+D12   --> D119
+D13   --> D120
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-In2_Cu.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D10   --> D121
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-B_Cu.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D11   --> D122
+D12   --> D123
+D14   --> D124
+D15   --> D125
+D16   --> D126
+D17   --> D127
+D18   --> D128
+D19   --> D129
+D20   --> D130
+D21   --> D131
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-B_Mask.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D10   --> D132
+D11   --> D133
+D12   --> D134
+D13   --> D135
+D15   --> D136
+D17   --> D137
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-B_Paste.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D10   --> D138
+D12   --> D139
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-B_SilkS.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D10   --> D140
+D11   --> D141
+D12   --> D142
+D13   --> D143
+D14   --> D144
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\ANANDM~1\AppData\Local\Temp\Project_OAK_MAIN_BRD_V1.0_gerber_importZIP\Project_OAK_MAIN_BRD_V1.0-Edge_Cuts.gbr' ----   Sun Dec 14 21:13:10 2025
+
+D10   --> D145
+D11   --> D146
+-----------------------------------------------------------------
